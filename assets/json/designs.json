@@ -1,0 +1,78 @@
+[
+    {
+        "tag": "main",
+        "heading": "Website for creators",
+        "subtitle": "A Framer template for YouTubers, bloggers, course creators, consultants, and coaches. Includes a CMS with customizable sections to showcase content, promote services, and engage audiences, plus non-targeted ad slots for promotion.",
+        "image": "assets/cover-images/designs/mentoring.avif",
+        "displayTag": "Framer",
+        "link": "https://mentoring.framer.website/"
+    },
+    {
+        "tag": "vertical",
+        "heading": "For writers and publishers",
+        "subtitle": "Create a simple website to sell your book online with this Framer template.",
+        "image": "assets/cover-images/designs/author.avif",
+        "displayTag": "Framer",
+        "link": "https://for-publishers.framer.website/",
+        "position": "left"
+    },
+    {
+        "tag": "vertical",
+        "heading": "Invoice templates",
+        "subtitle": "Three variants available. Designed in Figma, used by 3,000+ people, and counting.",
+        "image": "assets/cover-images/designs/invoices.avif",
+        "displayTag": "Figma",
+        "link": "https://bit.ly/figma-invoice-templates",
+        "position": "left"
+    },
+    {
+        "tag": "vertical",
+        "heading": "Bed and breakfast",
+        "subtitle": "Framer landing page template to break free from marketplace fees and own your listing.",
+        "image": "assets/cover-images/designs/bnb.avif",
+        "displayTag": "Framer",
+        "link": "https://bnb.framer.website/",
+        "position": "right"
+    },
+    {
+        "tag": "vertical",
+        "heading": "Landing page for professionals",
+        "subtitle": "Everybody needs a website, right? Here's a Framer landing page for professionals who mean business.",
+        "image": "assets/cover-images/designs/doctor.avif",
+        "displayTag": "Framer",
+        "link": "https://appointment.framer.website/",
+        "position": "right"
+    },
+    {
+        "tag": "horizontal",
+        "heading": "For restaurants",
+        "subtitle": "A Framer website template for local restaurants and cafes to begin their online presence.",
+        "image": "assets/cover-images/designs/restaurant.avif",
+        "displayTag": "Framer",
+        "link": "https://restaurant-cafe.framer.website/"
+    },
+    {
+        "tag": "horizontal",
+        "heading": "Google Doc online resume",
+        "subtitle": "For non-tech professionals—created with Google Docs.",
+        "image": "assets/cover-images/designs/resume.avif",
+        "displayTag": "Google Doc",
+        "link": "https://docs.google.com/document/d/1pBJ4KblWK8UUmD_khkjx_SX_1wOH8Jxg_kRFZm7oEJE/edit?usp=sharing"
+    },
+    {
+        "tag": "horizontal",
+        "heading": "Zero to One (0 → 1)",
+        "subtitle": "An eCommerce Framer template designed for entrepreneurs - sell or showcase!",
+        "image": "assets/cover-images/designs/zero.avif",
+        "displayTag": "Framer",
+        "link": "https://zero-to-one.framer.website/"
+    },
+    {
+        "tag": "horizontal",
+        "heading": "SoundScripter",
+        "subtitle": "A Framer landing page for voice to text transcribing platforms, quick and easy.",
+        "image": "assets/cover-images/designs/sound.avif",
+        "displayTag": "Framer",
+        "link": "https://soundscripter.framer.website/"
+    }
+]
