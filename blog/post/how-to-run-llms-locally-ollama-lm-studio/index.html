@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Standard SEO --><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Run LLMs locally - Romio Joseph</title><meta name="description" content="How can I run LLMs on a mid-range consumer laptop?"><link rel="canonical" href="https://romiojoseph.github.io/blog/post/how-to-run-llms-locally-ollama-lm-studio/"><!-- Favicon --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><!-- Open Graph (Facebook, X, LinkedIn, etc.) --><meta property="og:title" content="Run LLMs locally - Romio Joseph"><meta property="og:description" content="How can I run LLMs on a mid-range consumer laptop?"><meta property="og:url" content="https://romiojoseph.github.io/blog/post/how-to-run-llms-locally-ollama-lm-studio/"><meta property="og:image" content="https://substackcdn.com/image/fetch/$s_!4cxA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17c969a9-bc21-4097-901b-b1b635991433_1920x1080.jpeg"><meta property="og:site_name" content="Romio Joseph"><meta property="og:type" content="website"><!-- Twitter Card Fallback (ensures large image card) --><meta name="twitter:card" content="summary_large_image"><!-- ADDED: Google Fonts Links --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"><script type="module">document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".slider-container").forEach(t=>{const e=t.querySelector(".slider-track"),o=t.querySelector(".slider-btn.prev"),s=t.querySelector(".slider-btn.next"),d=e.querySelectorAll(".card");if(!e||!o||!s||d.length===0)return;t.classList.add("js-enabled");let r=0;const c=d[0].offsetWidth+parseInt(getComputedStyle(e).gap),n=()=>{o.disabled=r===0,s.disabled=(r+1)*c>=e.scrollWidth-e.clientWidth};s.addEventListener("click",()=>{r++,e.scrollBy({left:c,behavior:"smooth"}),setTimeout(n,500)}),o.addEventListener("click",()=>{r--,e.scrollBy({left:-c,behavior:"smooth"}),setTimeout(n,500)}),e.addEventListener("scroll",n),n()})});</script><link rel="stylesheet" href="/_astro/archive.B0Qb6qdB.css">
+<link rel="stylesheet" href="/_astro/archive.CmHFBiHz.css">
+<link rel="stylesheet" href="/_astro/_slug_.BBp0g_XA.css"></head> <body class="is-blog-page"> <header class="main-header"> <div class="header-center"> <div class="header-nav left"> <a class="search-icon-link" aria-label="Bluesky Projects" href="https://romiojoseph.github.io/bluesky/" target="_blank" rel="noopener"><i class="ph-duotone ph-circles-three-plus"></i> </a> </div> <a href="/" class="header-logo"> <img src="/assets/svg/name.svg" alt="Romio Joseph"></a> <div class="header-nav right"> <a href="/blog/search" class="search-icon-link" aria-label="Search"> <i class="ph-duotone ph-magnifying-glass"></i> </a> </div> </div> <div class="header-nav"> <a href="/about">About</a> <a href="/data-portability">Data & Portability</a> <a href="/blog">Blog</a> <a href="/blog/featured">Featured</a> <a href="/blog/archive">Archive</a> </div> </header> <nav class="category-nav"> <a href="/blog/category/bluesky">Bluesky</a><a href="/blog/category/docs">Docs</a><a href="/blog/category/open-sourced">Open sourced</a><a href="/blog/category/spotlight">Spotlight</a> </nav> <main>   <article> <h1 class="post-title">Run LLMs locally</h1> <p class="post-description">How can I run LLMs on a mid-range consumer laptop?</p> <p class="post-meta"> <span>Published on 25 Jul, 2024</span>  <span>
+in  <a href="/blog/category/docs"> Docs </a> </span> </p> <img class="post-social-card" src="https://substackcdn.com/image/fetch/$s_!4cxA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17c969a9-bc21-4097-901b-b1b635991433_1920x1080.jpeg" alt="Cover for Run LLMs locally"> <div class="markdown-body post-content"><p><em>Originally published on <a href="https://romio.substack.com/p/how-to-run-llms-locally-ollama-lm-studio">Substack on 25 Jul 2024</a>.</em></p>
+<p>I remember trying out the <a href="https://lmstudio.ai/">LM Studio</a> a few months back, then due to the slow performance of my system, I decided to uninstall it and wait for the updates.</p>
+<p>Then yesterday I saw the <a href="https://llama.meta.com/">Llama 3.1</a> update and Mark’s blog about open-sourcing AI models. So I thought let’s explore again LLMs locally.</p>
+<p>I tried <a href="https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file">Text Generation web UI</a> first and tried to load the <a href="https://huggingface.co/TheBloke/openchat-3.5-0106-GPTQ">openchat-3.5-0106-GPTQ</a> from <code>TheBloke</code>. And still, the generation is slow. But I know it is because of my hardware<a href="https://romio.substack.com/p/how-to-run-llms-locally-ollama-lm-studio#footnote-1-146959932">1</a>.</p>
+<p>Anyway, so as a second attempt, I installed LM Studio again to explore LLMs locally. That’s when I saw the compatibility status along with each model. It will tell whether the model will fully support my system, partially support it, or likely not support it. Now, that gives me something to work with.</p>
+<p>Also decided to install <a href="https://github.com/ollama/ollama">Ollama</a> - an open-source platform to run LLM locally.</p>
+<p>So I searched for models that were most popular and matched my criteria. There are many available. So I spent some time in Perplexity to learn what I should look for with my specifications.</p>
+<p>According to Perplexity, my best options are Quantized Models<a href="https://romio.substack.com/p/how-to-run-llms-locally-ollama-lm-studio#footnote-2-146959932">2</a>. So I downloaded five models from Hugging Face and Ollama library to try out.</p>
+<ul>
+<li><a href="https://huggingface.co/meta-llama/Meta-Llama-3.1-8B">Meta-Llama-3.1-8B</a> from <code>meta-llama</code></li>
+<li><a href="https://huggingface.co/lmstudio-ai/gemma-2b-it-GGUF/blob/main/gemma-2b-it-q8_0.gguf">gemma-2b-it-GGUF</a> from <code>lmstudio-ai</code></li>
+<li><a href="https://ollama.com/library/phi3:latest">Phi-3 Mini -3.82B</a> from <code>microsoft</code></li>
+<li><a href="https://huggingface.co/stabilityai/stablelm-2-1_6b">stablelm-2-1_6b</a> from <code>stabilityai</code></li>
+<li><a href="https://ollama.com/library/qwen2:0.5b">qwen2-0.5b</a> from <code>qwen</code></li>
+</ul>
+<p>So in simple terms, you need to understand your device specifications and look for modal cards that suit.</p>
+<p>Both Hugging Face and Ollama display model cards.</p>
+<p>Model cards from Hugging Face and Ollama</p>
+<h2>How to run LLMs locally using LM Studio?</h2>
+<p>It’s a straightforward process. Because it’s all UI-based. Anyone can figure it out if they spend a few minutes to understand the interface. You can see the size and compatibility status when you search for a model.</p>
+<p>Install <a href="https://lmstudio.ai/">https://lmstudio.ai</a></p>
+<p>LLMs listing along with compatibility status.</p>
+<p>Download the models you need and they will be downloaded to the default path</p>
+<p><code>C:\Users\ComputerName\.cache\lm-studio\models</code></p>
+<p>Now go to the AI Chat tab and load a model, adjust the settings (this is a bit tricky, you need to find the optimal performance settings by tweaking multiple times).</p>
+<p>When in doubt, there will be an information icon with every string, just hover it and read.</p>
+<p>I gave max GPU usage to Gemma 2 from <code>lmstudio-ai</code> and it generated content at lightning speed. I played around a little and I think I can find an appropriate use case for it soon. Also note that when running locally, the context size will be very low due to the low-end hardware system.</p>
+<h2>How to run LLMs locally using Ollama?</h2>
+<p>My first impression was a little bit tough. I didn&#39;t quite understand how to use this. because it’s just a Terminal. So I had to spend some time to understand what everything is. So I’ll try to explain in the best simplest way possible (I’m a Windows user, so the terms will be based on Windows).</p>
+<ul>
+<li>Install Ollama from the website <a href="https://ollama.com/">https://ollama.com</a></li>
+<li>After installation open a Terminal (Command Prompt or Windows PowerShell)</li>
+<li>It will display the general user root <code>C:\Users\ComputerName</code></li>
+<li>Type <code>Ollama</code> and hit enter. It will display a set of lists (Just to familiarize)</li>
+</ul>
+<p>A list of Ollama commands in the terminal</p>
+<ul>
+<li>Go to the <a href="https://ollama.com/library">Ollama Model Library</a> and find the appropriate and suitable model by understanding your device’s capability.</li>
+<li>After finding one, just click on it and it will open the model screen.</li>
+</ul>
+<p>Model card and command to pull and run an LLM on Ollama in the terminal.</p>
+<ul>
+<li>Now all you have to do is make sure the latest is selected and <strong>click on that copy icon</strong> along with the command to pull this model to your system, in this case, <code>ollama run phi3:latest</code></li>
+<li>Back to the Terminal, <strong>paste the command, and hit enter</strong>. It will start to download the model to your system (Check your Terminal for updates). You can find the path here <code>C:\Users\ComputerName\.ollama\models\blobs</code></li>
+<li>After a successful download, you will see a subtle colored command.<br>  <code>&gt;&gt;&gt; Send a message</code> (<code>/? for help</code>)</li>
+<li>This means you’re now running that LLM locally, you can ask anything and it will answer momentarily (If your system can hold the weight of the LLM).</li>
+</ul>
+<p>Even though it looks a little bit of a developer style, it is easy.</p>
+<h4>To run it again;</h4>
+<p>You can close this Terminal anytime and whenever you need to run it again just open a Terminal and run that command from the Ollama model library or just type your LLM name (<code>Ollama run phi3:latest)</code></p>
+<hr>
+<p>If it feels a little complicated to navigate, there is another way. You can use it like ChatGPT/Gemini style.</p>
+<h3>How to run LLMs locally using <a href="https://openwebui.com/">Open WebUI</a>?</h3>
+<ul>
+<li>Install <a href="https://ollama.com/">Ollama</a></li>
+<li>Install <a href="https://www.docker.com/">Docker</a></li>
+<li>After successful installation of both, go to the <a href="https://github.com/open-webui/open-webui">Open WebUI’s Github repository</a>.</li>
+<li>Scroll down to documentation and find the command for your requirements. I choose to run “<em>To run Open WebUI with Nvidia GPU support</em>”.</li>
+<li>Copy and paste that command to the Terminal and wait for the installation to finish.</li>
+<li>After successful installation, open the <code>Docker Desktop</code> from the apps.</li>
+<li>Select the container tab and there will be one container configured.</li>
+<li>The container is already running by now, so look at the table. There will be a column named “Port”, click on the hyperlink. It will open <code>http://localhost:3000</code></li>
+<li>Click on sign up and create a single account (Everything is running locally, not online). This account is just for a user account purpose.</li>
+<li>Now you can see the <a href="https://docs.openwebui.com/assets/images/demo-d3952c8561c4808c1d447fc061c71174.gif">Open Web UI</a> - familiar right?</li>
+<li>Just select a model and ask away.</li>
+<li>Do not forget to tweak the settings to your needs.</li>
+<li>You can load multiple models and ask questions (but it depends on your system).</li>
+<li>The UI has a lot of useful features. Play around and find everything.</li>
+<li>Now when you finished, you can close the tab and quit the docker from the taskbar.</li>
+<li>When you need to open it again, just open the <code>Docker Desktop</code> and click <code>http://localhost:3000</code></li>
+</ul>
+<h3>How to load a gguf model downloaded from Hugging Face in Ollama</h3>
+<p>Now you may have gguf models downloaded with LM Studio, or direct from Hugging Face, right? You can load this in Ollama.</p>
+<ul>
+<li>Save the gguf file in a dedicated folder. I have a gguf file <code>gemma-2b-it-q8_0.gguf</code> and I saved it in the path <code>E:\AI\lmstudio-ai\gemma-2b-it-GGUF</code></li>
+<li>Now create a note file in the same directory and type the following.<br>  <code>FROM E:\AI\lmstudio-ai\gemma-2b-it-GGUF\gemma-2b-it-q8_0.gguf</code></li>
+<li>Save the file as a text (file name must be <code>Modelfile</code>)and remove the extension (Press F2 and remove the <code>.txt</code>).</li>
+<li>Now you have two files in that directory, right? One is a gguf file and the other is a file without any extension and named Modelfile.</li>
+<li>While you’re in the folder where these files are stored, right-click and select <code>Open in Terminal.</code> This will open a Terminal that is now ready to do things in this directory, nothing complicated.</li>
+<li>Now the final part, type <code>ollama create gemma-2b-it -f Modelfile</code></li>
+<li><strong>Just remember that</strong> <code>gemma-2b-it</code> <strong>in the above command is a name I gave,</strong> you can change it to your model name. It will create a model and you can run it like usual. Type and enter <code>Ollama list</code> to see the available models. It will be available in the Open WebUI too. Just play around.</li>
+</ul>
+<p>I’m waiting for smaller models or ones that can be configured to our specific needs online and downloaded in smaller sizes. I believe future devices will focus on this, making the process easier.</p>
+<p><strong>Please note:</strong> Running LLMs locally is a process of huge power consumption and the laptop will produce more heat than usual. So, for very simple things, use any cloud-based AI services. My current recommendations are Claude and Perplexity.</p>
+<p>I’m happy that all this is possible now and all we need is more optimization to run it smoothly and efficiently. There will be many use cases like talking to a computer in real-time and getting appropriate answers even when the internet is not available, handling with a company, or personally sensitive data, etc.</p>
+</div> <div class="tags-container"> <a href="https://bsky.app/search?q=Run%20LLMs%20locally" class="tag-badge" target="_blank" rel="noopener"> Run LLMs locally </a><a href="https://bsky.app/search?q=Ollama" class="tag-badge" target="_blank" rel="noopener"> Ollama </a><a href="https://bsky.app/search?q=LM%20Studio" class="tag-badge" target="_blank" rel="noopener"> LM Studio </a><a href="https://bsky.app/search?q=Open%20WebUI" class="tag-badge" target="_blank" rel="noopener"> Open WebUI </a> </div>  </article> <script type="module" src="/_astro/_slug_.astro_astro_type_script_index_0_lang.BYGo_fkC.js"></script>  </main> <footer class="main-footer"> <div class="footer-left"> <span>&copy; 2025 Romio Joseph.</span> <div class="footer-time-wrapper"> <span>
+Based in Alleppey, Kerala, IN (GMT +5:30)
+<span id="live-time"></span> </span> <!-- The Popover Content --> <div class="footer-popover"> <img src="/assets/cover-images/alpy.avif" alt="Alleppey Light House Image - From Google" class="popover-image"> <h6>Alleppey, Kerala, IN</h6> <aside>
+A city on the Laccadive Sea in the southern Indian state of
+                    Kerala.
+</aside> </div> </div> </div> <div class="footer-right"> <span>All rights reserved.</span> <a href="/terms-disclaimer-policies">Terms, Policies & Disclaimer</a> </div> </footer> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const t=document.getElementById("live-time");if(!t)return;function e(){const n=new Date().toLocaleTimeString("en-US",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",hour12:!0});t.textContent=n}setInterval(e,1e3),e()});</script> <script type="module" src="/_astro/BlogLayout.astro_astro_type_script_index_1_lang.DyH8HZto.js"></script> </body> </html>

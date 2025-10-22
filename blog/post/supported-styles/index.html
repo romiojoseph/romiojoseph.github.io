@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Standard SEO --><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ATProto Blog Supported Styles - Romio Joseph</title><meta name="description" content="This documentation covers the supported Markdown styles and tags for this blog. Use this as a quick reference to format your content effectively."><link rel="canonical" href="https://romiojoseph.github.io/blog/post/supported-styles/"><!-- Favicon --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><!-- Open Graph (Facebook, X, LinkedIn, etc.) --><meta property="og:title" content="ATProto Blog Supported Styles - Romio Joseph"><meta property="og:description" content="This documentation covers the supported Markdown styles and tags for this blog. Use this as a quick reference to format your content effectively."><meta property="og:url" content="https://romiojoseph.github.io/blog/post/supported-styles/"><meta property="og:image" content="https://raw.githubusercontent.com/romiojoseph/blogspot/refs/heads/main/blog/media/images/support-styles-image.png"><meta property="og:site_name" content="Romio Joseph"><meta property="og:type" content="website"><!-- Twitter Card Fallback (ensures large image card) --><meta name="twitter:card" content="summary_large_image"><!-- ADDED: Google Fonts Links --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"><script type="module">document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".slider-container").forEach(t=>{const e=t.querySelector(".slider-track"),o=t.querySelector(".slider-btn.prev"),s=t.querySelector(".slider-btn.next"),d=e.querySelectorAll(".card");if(!e||!o||!s||d.length===0)return;t.classList.add("js-enabled");let r=0;const c=d[0].offsetWidth+parseInt(getComputedStyle(e).gap),n=()=>{o.disabled=r===0,s.disabled=(r+1)*c>=e.scrollWidth-e.clientWidth};s.addEventListener("click",()=>{r++,e.scrollBy({left:c,behavior:"smooth"}),setTimeout(n,500)}),o.addEventListener("click",()=>{r--,e.scrollBy({left:-c,behavior:"smooth"}),setTimeout(n,500)}),e.addEventListener("scroll",n),n()})});</script><link rel="stylesheet" href="/_astro/archive.B0Qb6qdB.css">
+<link rel="stylesheet" href="/_astro/archive.CmHFBiHz.css">
+<link rel="stylesheet" href="/_astro/_slug_.BBp0g_XA.css"></head> <body class="is-blog-page"> <header class="main-header"> <div class="header-center"> <div class="header-nav left"> <a class="search-icon-link" aria-label="Bluesky Projects" href="https://romiojoseph.github.io/bluesky/" target="_blank" rel="noopener"><i class="ph-duotone ph-circles-three-plus"></i> </a> </div> <a href="/" class="header-logo"> <img src="/assets/svg/name.svg" alt="Romio Joseph"></a> <div class="header-nav right"> <a href="/blog/search" class="search-icon-link" aria-label="Search"> <i class="ph-duotone ph-magnifying-glass"></i> </a> </div> </div> <div class="header-nav"> <a href="/about">About</a> <a href="/data-portability">Data & Portability</a> <a href="/blog">Blog</a> <a href="/blog/featured">Featured</a> <a href="/blog/archive">Archive</a> </div> </header> <nav class="category-nav"> <a href="/blog/category/bluesky">Bluesky</a><a href="/blog/category/docs">Docs</a><a href="/blog/category/open-sourced">Open sourced</a><a href="/blog/category/spotlight">Spotlight</a> </nav> <main>   <article> <h1 class="post-title">ATProto Blog Supported Styles</h1> <p class="post-description">This documentation covers the supported Markdown styles and tags for this blog. Use this as a quick reference to format your content effectively.</p> <p class="post-meta"> <span>Published on 31 Oct, 2024</span> <span>Updated on 18 Oct, 2025</span> <span>
+in  <a href="/blog/category/docs"> Docs </a> </span> </p> <img class="post-social-card" src="https://raw.githubusercontent.com/romiojoseph/blogspot/refs/heads/main/blog/media/images/support-styles-image.png" alt="Cover for ATProto Blog Supported Styles"> <div class="markdown-body post-content"><p>Markdown is a lightweight markup language that allows you to create well-structured content using plain text formatting. This project supports a variety of Markdown tags to help you create content that’s consistent and visually organized.</p>
+<p><em>If you&#39;re using a Markdown editor like Obsidian, you can apply most tags by simply typing in plain text, then right-clicking to choose the appropriate tag.</em></p>
+<h3>1. Headings</h3>
+<p>Organize content with clear heading levels. Use <code>#</code> for different heading levels, ranging from <code># H1</code> to <code>###### H6</code>.</p>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<h3>2. Lists</h3>
+<p>Use both ordered and unordered lists.</p>
+<ol>
+<li>For ordered list, type a number, then a full stop, and then a space.</li>
+</ol>
+<ul>
+<li>For unordered list - also known as bullet points -  type a star (<code>*</code>) or a hyphen (<code>-</code>) or a plus (<code>+</code>) and then a space.</li>
+</ul>
+<p>And for nested lists, just create your desired list and hit enter then tab. For eg;</p>
+<ul>
+<li>This is a bullet point, you can do the same for numbered lists.<ul>
+<li>This is a nested bullet point<ul>
+<li>Again nested. Just hit enter and then tab.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>3. Emphasis</h3>
+<p>Emphasize keywords or important sections of text.</p>
+<ul>
+<li><strong>Bold:</strong> Use <code>**text**</code> for bold.</li>
+<li><em>Italic</em>: Use <code>*text*</code> for italic.</li>
+<li><u>Underline</u>: Use <code>&lt;u&gt;u tag&lt;/u&gt;</code> to achieve underlining.</li>
+<li><del>Strikethrough</del>: Use double tilde <code>~~</code> before and after a text.</li>
+<li><em><strong>Bold and italic:</strong></em> Use <code>***text***</code> for bold and italic</li>
+<li><mark><strong>Mark</strong></mark>: Use <code>&lt;mark&gt;text&lt;/mark&gt;</code> for marking the text like this.`</li>
+<li><strong>Superscript:</strong> To create superscript text, use the <code>&lt;sup&gt;</code> tag. eg, E = mc<sup>2</sup> (<code>E = mc&lt;sup&gt;2&lt;/sup&gt;</code>). You can mainly use it for giving footnotes.</li>
+<li><strong>Subscript:</strong> For subscript text, use the <code>&lt;sub&gt;</code> tag. H<sub>2</sub>O (<code>H&lt;sub&gt;2&lt;/sub&gt;O</code>)</li>
+<li><code>Inlince code:</code> Use <code>the symbol called **backtick**</code> for inline code, it looks like this (`)</li>
+<li>Horizontal line: Either type <code>---</code> or <code>***</code></li>
+</ul>
+<h3>4. Blockquotes</h3>
+<p>Highlight key points or quotes including citation.</p>
+<blockquote>
+<p>Murphy&#39;s law doesn&#39;t mean that something bad will happen. It means that whatever <em>can</em> happen, will happen. And that sounded just fine to us.
+<cite>- Cooper | Interstellar (2014)</cite></p>
+</blockquote>
+<ul>
+<li>Use <code>&gt;</code> before a paragraph to create a blockquote.</li>
+<li>And to add a citation, use <code>&lt;cite&gt;Citation text&lt;/cite&gt;</code></li>
+</ul>
+<h3>5. Links</h3>
+<p>Easily add <a href="https://www.google.com/">hyperlinks</a> and reference links. The syntax is a combination of closed and open brackets.</p>
+<pre><code>[Link text](https://www.domain.com)
+</code></pre>
+<h3>6. Buttons</h3>
+<p>Sometimes we need buttons. I have created two types of buttons. One as the default button and one as the primary button. Check the below code snippets.</p>
+<pre><code>&lt;button onclick=&quot;window.open(&#39;https://www.domain.com&#39;, &#39;_blank&#39;, &#39;noopener&#39;);&quot;&gt;
+	Default button
+&lt;/button&gt;
+</code></pre>
+<button onclick="window.open('https://www.domain.com', '_blank', 'noopener');">
+	Default button
+</button>
+
+<p>See how simple it is... Just copy paste this code snippet, change the link and the button label.</p>
+<h5>6.1 Alerts</h5>
+<div class="at-proto-blog-alert at-proto-blog-alert-info">
+        This is an info alert!
+  </div>
+
+<div class="at-proto-blog-alert at-proto-blog-alert-success">
+        This is a success alert!
+   </div>
+
+<div class="at-proto-blog-alert at-proto-blog-alert-warning">
+        This is a warning alert!
+</div>
+
+<div class="at-proto-blog-alert at-proto-blog-alert-danger">
+        This is a danger alert!
+</div>
+
+<hr>
+<h3>7. Media</h3>
+<h5>7.1 Images</h5>
+<p>Use the HTML <code>&lt;img&gt;</code> tag to embed images. Just copy the code below, update the image path, and write a short alt text. html Copy Edit</p>
+<pre><code>&lt;img src=&quot;https://www.domain.com/assets/media/images/image.avif&quot; alt=&quot;describe the image&quot;&gt;
+</code></pre>
+<img src="https://raw.githubusercontent.com/romiojoseph/blogspot/refs/heads/main/blog/media/images/support-styles-image.png" alt="Obsidian is the best markdown editor" title="Obsidian is the best markdown editor">
+
+<h5>7.2 Video</h5>
+<p>For video use the below code snippet. Call raw links from external libraries, which means the url ends with the video extension and if you run that url on browser, it will play a video using browser video player.</p>
+<pre><code>&lt;video controls&gt;
+    &lt;source src=&quot;https://github.com/romiojoseph/blogspot/raw/refs/heads/main/blog/media/videos/video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+</code></pre>
+<video controls>
+    <source src="https://github.com/romiojoseph/blogspot/raw/refs/heads/main/blog/media/videos/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<h5>7.3 Audio</h5>
+<p>For video use the below code snippet. The same rule applies here.</p>
+<pre><code>&lt;audio controls&gt;
+    &lt;source src=&quot;https://github.com/romiojoseph/blogspot/raw/refs/heads/main/blog/media/audios/audio.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+</code></pre>
+<audio controls>
+    <source src="https://github.com/romiojoseph/blogspot/raw/refs/heads/main/blog/media/audios/audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+
+<h3>8. Code snippet</h3>
+<p>For code snippets, right-click, format and select the &#39;Code&#39; option. Alternatively, surround the code with triple backticks for a block code format.</p>
+<p><em>If it shows <mark><code> </code></mark> in the code block, just select the affected text, <code>Shit + Tab</code> and bring everything to the first column and then use <code>tab</code> to properly indent.</em></p>
+<pre><code class="language-css">code {
+	font-family: var(--font-family-mono);
+	font-size: var(--font-size-body);
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	color: var(--obsidian-11);
+	line-height: 1.6;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+</code></pre>
+<h3>9. Embed</h3>
+<p>You can easily embed Bluesky posts, YouTube videos, Spotify songs and more. Just grab the code from the respective posts/videos/songs and just paste it here.</p>
+<h5>Bluesky</h5>
+<blockquote class="bluesky-embed" data-bluesky-uri="at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3l6xwsu3f4t2t" data-bluesky-cid="bafyreidkzf75rbvwqrnoc6gs76o7nwk73yqbdmn2awcvlwqxcnbhaoipve" data-bluesky-embed-color-mode="system"><p lang="en">This is how Bluesky is decentralized. In the same way that you can switch search engines and see the same web, you can switch social apps and see the same atmosphere.
+
+<p>It&#39;s because everybody&#39;s got their own site</p>— Paul Frazee (<a href="https://bsky.app/profile/did:plc:ragtjsm2j2vknwkz3zp4oxrd?ref_src=embed">@pfrazee.com</a>) <a href="https://bsky.app/profile/did:plc:ragtjsm2j2vknwkz3zp4oxrd/post/3l6xwsu3f4t2t?ref_src=embed">October 21, 2024 at 2:56 AM</a></blockquote><script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script></p>
+<h5>YouTube</h5>
+<p>To embed a YouTube video use this iframe code snippet. You can grab the embed link source from YouTube. And copy and replace that link only here (make sure it&#39;s an embed link - for eg; <mark><strong><a href="https://www.youtube.com/embed/F_pInoR8Dcs">https://www.youtube.com/embed/F_pInoR8Dcs</a></strong></mark>). So that the styles will be maintained.</p>
+<pre><code>&lt;iframe 
+	class=&quot;youtube-embed&quot;
+    src=&quot;https://www.youtube.com/embed/F_pInoR8Dcs&quot; 
+    title=&quot;YouTube video player&quot; 
+    frameborder=&quot;0&quot; 
+    allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; 
+    referrerpolicy=&quot;strict-origin-when-cross-origin&quot; 
+    allowfullscreen&gt;
+&lt;/iframe&gt;
+</code></pre>
+<iframe 
+	class="youtube-embed"
+    src="https://www.youtube.com/embed/F_pInoR8Dcs" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
+
+<h3>10. Table</h3>
+<p>To be frank, table formatting in markdowns is a little difficult. But we have Obsidian, right? So just right click &gt; Insert &gt; Table.  </p>
+<p>You can create great tables easily and there is also sort option which means you can build the table easily first and manage it later with features like add, move, duplicate, delete, align and sort.</p>
+<h5>Less column table</h5>
+<p><em>Data credits: Perplexity</em></p>
+<table>
+<thead>
+<tr>
+<th>Technology</th>
+<th>Description</th>
+<th>Creator</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C (1972)</td>
+<td>Foundational general-purpose programming language</td>
+<td>Dennis Ritchie (Bell Labs)</td>
+</tr>
+<tr>
+<td>C++ (1985)</td>
+<td>Object-oriented extension of C</td>
+<td>Bjarne Stroustrup (Bell Labs)</td>
+</tr>
+<tr>
+<td>ARPANET (1969)</td>
+<td>First operational packet-switching network</td>
+<td>U.S. Department of Defense</td>
+</tr>
+<tr>
+<td>TCP/IP (1983)</td>
+<td>Internet protocol suite for reliable data transfer</td>
+<td>Vint Cerf, Bob Kahn</td>
+</tr>
+<tr>
+<td>HTML 1.0 (1993)</td>
+<td>Standardized markup language for the web</td>
+<td>Tim Berners-Lee (W3C)</td>
+</tr>
+<tr>
+<td>Java (1995)</td>
+<td>Platform-independent, object-oriented language</td>
+<td>James Gosling (Sun Microsystems)</td>
+</tr>
+<tr>
+<td>JavaScript (1995)</td>
+<td>Language for client-side scripting in browsers</td>
+<td>Brendan Eich (Netscape)</td>
+</tr>
+<tr>
+<td>Ruby (1995)</td>
+<td>High-level, interpreted programming language</td>
+<td>Yukihiro Matsumoto</td>
+</tr>
+<tr>
+<td>CSS 1.0 (1996)</td>
+<td>Styling language for HTML</td>
+<td>Håkon Wium Lie (W3C)</td>
+</tr>
+<tr>
+<td>XML 1.0 (1998)</td>
+<td>Markup language for data storage and transport</td>
+<td>World Wide Web Consortium (W3C)</td>
+</tr>
+<tr>
+<td>RSS 0.9 (1999)</td>
+<td>Initial version of RSS for web syndication</td>
+<td>Ramanathan V. Guha (Netscape)</td>
+</tr>
+<tr>
+<td>AJAX (2005)</td>
+<td>Asynchronous JavaScript and XML for dynamic web pages</td>
+<td>Jesse James Garrett (Adaptive Path)</td>
+</tr>
+<tr>
+<td>Atom 1.0 (2005)</td>
+<td>Syndication format alternative to RSS</td>
+<td>Internet Engineering Task Force (IETF)</td>
+</tr>
+<tr>
+<td>Node.js (2009)</td>
+<td>JavaScript runtime for server-side programming</td>
+<td>Ryan Dahl</td>
+</tr>
+<tr>
+<td>React (2013)</td>
+<td>JavaScript library for building user interfaces</td>
+<td>Jordan Walke (Facebook)</td>
+</tr>
+<tr>
+<td>HTML5 (2014)</td>
+<td>Fifth major revision of HTML</td>
+<td>World Wide Web Consortium (W3C)</td>
+</tr>
+<tr>
+<td>Kubernetes (2014)</td>
+<td>System for container orchestration</td>
+<td>Google</td>
+</tr>
+<tr>
+<td>TensorFlow (2015)</td>
+<td>Open-source machine learning and deep learning library</td>
+<td>Google</td>
+</tr>
+<tr>
+<td>AI (Deep Learning) (2010s)</td>
+<td>Advancements in deep learning and AI</td>
+<td>Developed by various organizations globally</td>
+</tr>
+</tbody></table>
+<h5>A few column table</h5>
+<p><em>Data credits: Google</em></p>
+<table>
+<thead>
+<tr>
+<th>Movie</th>
+<th>Year</th>
+<th>Genre</th>
+<th>Director</th>
+<th>Music</th>
+<th>IMDb</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>The Godfather</td>
+<td>1972</td>
+<td>Drama</td>
+<td>Francis Ford Coppola</td>
+<td>Nino Rota</td>
+<td><a href="https://www.imdb.com/title/tt0068646">https://www.imdb.com/title/tt0068646</a></td>
+</tr>
+<tr>
+<td>The Dark Knight</td>
+<td>2008</td>
+<td>Action</td>
+<td>Christopher Nolan</td>
+<td>James Newton Howard and  Hans Zimmer</td>
+<td><a href="https://www.imdb.com/title/tt0468569/">https://www.imdb.com/title/tt0468569/</a></td>
+</tr>
+<tr>
+<td>The Descendants</td>
+<td>2011</td>
+<td>Drama</td>
+<td>Alexander Payne</td>
+<td>Jeff Peterson</td>
+<td><a href="https://www.imdb.com/title/tt1033575/">https://www.imdb.com/title/tt1033575/</a></td>
+</tr>
+<tr>
+<td>Gravity</td>
+<td>2013</td>
+<td>Thriller</td>
+<td>Alfonso Cuarón</td>
+<td>Steven Price</td>
+<td><a href="https://www.imdb.com/title/tt1454468/">https://www.imdb.com/title/tt1454468/</a></td>
+</tr>
+<tr>
+<td>Interstellar</td>
+<td>2014</td>
+<td>Sci-fi</td>
+<td>Christopher Nolan</td>
+<td>Hans Zimmer</td>
+<td><a href="https://www.imdb.com/title/tt0816692/">https://www.imdb.com/title/tt0816692/</a></td>
+</tr>
+</tbody></table>
+<h5>More than a few column table</h5>
+<p><em>Data credits: Meta AI</em></p>
+<table>
+<thead>
+<tr>
+<th align="left">TV Show</th>
+<th align="left">Year</th>
+<th align="left">Genre</th>
+<th align="left">Creator</th>
+<th align="left">Seasons</th>
+<th align="left">Episodes</th>
+<th align="left">Episode Length</th>
+<th align="left">IMDb</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Friends</td>
+<td align="left">1994</td>
+<td align="left">Comedy</td>
+<td align="left">David Crane</td>
+<td align="left">10</td>
+<td align="left">236</td>
+<td align="left">22 min</td>
+<td align="left">8.9/10</td>
+</tr>
+<tr>
+<td align="left">The Office (US)</td>
+<td align="left">2005</td>
+<td align="left">Comedy</td>
+<td align="left">Greg Daniels</td>
+<td align="left">9</td>
+<td align="left">201</td>
+<td align="left">22 min</td>
+<td align="left">8.8/10</td>
+</tr>
+<tr>
+<td align="left">How I Met Your Mother</td>
+<td align="left">2005</td>
+<td align="left">Comedy</td>
+<td align="left">Craig Thomas</td>
+<td align="left">9</td>
+<td align="left">208</td>
+<td align="left">22 min</td>
+<td align="left">8.3/10</td>
+</tr>
+<tr>
+<td align="left">The Big Bang Theory</td>
+<td align="left">2007</td>
+<td align="left">Comedy</td>
+<td align="left">Chuck Lorre</td>
+<td align="left">12</td>
+<td align="left">279</td>
+<td align="left">18-22 min</td>
+<td align="left">8.1/10</td>
+</tr>
+<tr>
+<td align="left">Breaking Bad</td>
+<td align="left">2008</td>
+<td align="left">Drama</td>
+<td align="left">Vince Gilligan</td>
+<td align="left">5</td>
+<td align="left">62</td>
+<td align="left">45-60 min</td>
+<td align="left">9.5/10</td>
+</tr>
+<tr>
+<td align="left">Modern Family</td>
+<td align="left">2009</td>
+<td align="left">Comedy</td>
+<td align="left">Christopher Lloyd</td>
+<td align="left">11</td>
+<td align="left">250</td>
+<td align="left">22 min</td>
+<td align="left">8.4/10</td>
+</tr>
+<tr>
+<td align="left">Young Sheldon</td>
+<td align="left">2017</td>
+<td align="left">Comedy</td>
+<td align="left">Chuck Lorre</td>
+<td align="left">6</td>
+<td align="left">127</td>
+<td align="left">18-22 min</td>
+<td align="left">7.8/10</td>
+</tr>
+</tbody></table>
+</div> <div class="tags-container"> <a href="https://bsky.app/search?q=supported%20styles" class="tag-badge" target="_blank" rel="noopener"> supported styles </a><a href="https://bsky.app/search?q=markdown%20to%20html" class="tag-badge" target="_blank" rel="noopener"> markdown to html </a> </div>  </article> <script type="module" src="/_astro/_slug_.astro_astro_type_script_index_0_lang.BYGo_fkC.js"></script>  </main> <footer class="main-footer"> <div class="footer-left"> <span>&copy; 2025 Romio Joseph.</span> <div class="footer-time-wrapper"> <span>
+Based in Alleppey, Kerala, IN (GMT +5:30)
+<span id="live-time"></span> </span> <!-- The Popover Content --> <div class="footer-popover"> <img src="/assets/cover-images/alpy.avif" alt="Alleppey Light House Image - From Google" class="popover-image"> <h6>Alleppey, Kerala, IN</h6> <aside>
+A city on the Laccadive Sea in the southern Indian state of
+                    Kerala.
+</aside> </div> </div> </div> <div class="footer-right"> <span>All rights reserved.</span> <a href="/terms-disclaimer-policies">Terms, Policies & Disclaimer</a> </div> </footer> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const t=document.getElementById("live-time");if(!t)return;function e(){const n=new Date().toLocaleTimeString("en-US",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",hour12:!0});t.textContent=n}setInterval(e,1e3),e()});</script> <script type="module" src="/_astro/BlogLayout.astro_astro_type_script_index_1_lang.DyH8HZto.js"></script> </body> </html>

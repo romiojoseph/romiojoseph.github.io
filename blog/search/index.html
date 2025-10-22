@@ -1,0 +1,1297 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Standard SEO --><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Search Blog Posts</title><meta name="description" content="In pursuit of happiness. I like working at startups, helping out with open-source projects, and exploring the future of digital creation using natural language."><link rel="canonical" href="https://romiojoseph.github.io/blog/search/"><!-- Favicon --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><!-- Open Graph (Facebook, X, LinkedIn, etc.) --><meta property="og:title" content="Search Blog Posts"><meta property="og:description" content="In pursuit of happiness. I like working at startups, helping out with open-source projects, and exploring the future of digital creation using natural language."><meta property="og:url" content="https://romiojoseph.github.io/blog/search/"><meta property="og:image" content="https://romiojoseph.github.io/assets/social-card.png"><meta property="og:site_name" content="Romio Joseph"><meta property="og:type" content="website"><!-- Twitter Card Fallback (ensures large image card) --><meta name="twitter:card" content="summary_large_image"><!-- ADDED: Google Fonts Links --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"><script type="module">document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".slider-container").forEach(t=>{const e=t.querySelector(".slider-track"),o=t.querySelector(".slider-btn.prev"),s=t.querySelector(".slider-btn.next"),d=e.querySelectorAll(".card");if(!e||!o||!s||d.length===0)return;t.classList.add("js-enabled");let r=0;const c=d[0].offsetWidth+parseInt(getComputedStyle(e).gap),n=()=>{o.disabled=r===0,s.disabled=(r+1)*c>=e.scrollWidth-e.clientWidth};s.addEventListener("click",()=>{r++,e.scrollBy({left:c,behavior:"smooth"}),setTimeout(n,500)}),o.addEventListener("click",()=>{r--,e.scrollBy({left:-c,behavior:"smooth"}),setTimeout(n,500)}),e.addEventListener("scroll",n),n()})});</script><link rel="stylesheet" href="/_astro/archive.B0Qb6qdB.css">
+<link rel="stylesheet" href="/_astro/archive.CmHFBiHz.css"></head> <body class="is-blog-page"> <header class="main-header"> <div class="header-center"> <div class="header-nav left"> <a class="search-icon-link" aria-label="Bluesky Projects" href="https://romiojoseph.github.io/bluesky/" target="_blank" rel="noopener"><i class="ph-duotone ph-circles-three-plus"></i> </a> </div> <a href="/" class="header-logo"> <img src="/assets/svg/name.svg" alt="Romio Joseph"></a> <div class="header-nav right"> <a href="/blog/search" class="search-icon-link" aria-label="Search"> <i class="ph-duotone ph-magnifying-glass"></i> </a> </div> </div> <div class="header-nav"> <a href="/about">About</a> <a href="/data-portability">Data & Portability</a> <a href="/blog">Blog</a> <a href="/blog/featured">Featured</a> <a href="/blog/archive">Archive</a> </div> </header> <nav class="category-nav"> <a href="/blog/category/bluesky">Bluesky</a><a href="/blog/category/docs">Docs</a><a href="/blog/category/open-sourced">Open sourced</a><a href="/blog/category/spotlight">Spotlight</a> </nav> <main>  <h1>Search</h1> <div class="search-form"> <input type="search" id="search-input" class="search-input" placeholder="Start typing to filter posts..." autofocus> </div> <div id="search-results" class="post-grid"> <div class="search-card-wrapper" data-searchable-content="new writing tools the fact that you can just build simple things with llms is a nice to have feature for the future. i hope things keep getting better over time. creating (or vibe coding) with llms is not as easy as people say. it has its ups and downs. the main issue i faced is with bug fixing in bigger projects. sometimes it just deletes lines from javascript files and says it's &#34;optimized&#34; or &#34;minified&#34; for stability. but when i test all the features, i see no errors, because the feature itself is gone or disabled and in some cases it will be there, but with a lot of another chain of errors. this is the most annoying part when you’re vibe coding.
+
+sometimes, the entire chat just breaks when it starts acting like this. and i have to start over. in the beginning, it didn’t bother me much. but once i started trying slightly bigger projects, i felt the need to keep a prompt library with follow up messages.
+
+i started with obsidian. [it felt like too much](https://bsky.app/profile/romiojoseph.github.io/post/3lhnzhlhvls2l) for a simple workflow. then i tried the so called windows &#34;[sticky notes (new)](https://bsky.app/profile/romiojoseph.github.io/post/3lmgmwiw3ec2v)&#34;. the classic one was fine, but the new one is slow and bloated. it takes forever to open. and even after it opens, setting up the note takes time. i feel like they killed the app. it used to be quick and simple, now it’s just heavy and annoying.
+
+then i switched to notepad. it’s fast, but the problem is i need to save every file manually. if i don’t, i get that pop up asking what to do with the file, which breaks my flow. especially when i’m in a hurry. for one off notes, it’s fine. but when i work, i like to keep only the windows i need. so even notepad became annoying.
+
+i even tried pinning basic prompts to clipboard history. it seemed okay at first. but once the list grew, scrolling through it broke the flow.
+
+around this time, i started thinking about a [bluesky thread drafting tool](https://romiojoseph.github.io/bluesky/draft-bluesky-threads/). but due to some complexity and limitations, i narrowed it down to a local system where users could write freely, and it would handle thread formatting. it was just an experiment.
+
+after that, i started building this browser-based writer app, which is a pwa. i don’t know if anyone else uses it. i don’t really care at this point. it fits my workflow perfectly right now. no idea how it’ll turn out later, but for now it’s just right. as llms improve at keeping context, i think i’ll be able to experiment more. right now, as always, there's no login or trackers.
+
+[try now](https://romiojoseph.github.io/writer/) ↗
+
+the app is simple. you can write multiple docs. you can take snapshots at any point to jump back and forth. there’s a word frequency list, and a focus mode to cut distractions. i even added a security pin. it's a small thing, but feels good. you can set goals and see some metrics. and there's auto-save every few seconds, so i can close it anytime without losing data.
+
+my current idea is this: users own their data. it's their job to handle it. so there's an import/export option too. everything is saved locally in the browser. it's meant to be a space for short-term notes, stuff you want to write and keep for a few hours or days. it will be there as long as you are not clearing the browser data.
+
+for readme or other quick markdown files,, i didn’t want to open obsidian. these are quick one time tasks, and i delete them once done. so i made another markdown editor for the web. just write, click to style, no need to remember the syntax. then download the file.
+
+[try now](https://romiojoseph.github.io/markdown/) ↗
+
+both editors work in the browser. they use local storage, so immediate data loss is not a worry. but again, it’s the user’s responsibility. that’s the motto i like these days. and this setup fits my current workflow well.
+
+<img src=&#34;https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3a%2f%2fsubstack-post-media.s3.amazonaws.com%2fpublic%2fimages%2fb8245c46-2877-40bf-b937-8de443be146e_2030x1440.png&#34; alt=&#34;just an image for social sharing&#34;>
+
+image credits: [https://in.pinterest.com/pin/95912667060101597/](https://in.pinterest.com/pin/95912667060101597/)"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/new-writing-tools" class="card"> <article class="blog-card"> <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb8245c46-2877-40bf-b937-8de443be146e_2030x1440.png" alt="Cover for New writing tools" class="card-image"> <div class="card-content"> <h2 class="card-title">New writing tools</h2> <p class="card-description">The fact that you can just build simple things with LLMs is a nice to have feature for the future. I hope things keep getting better over time.</p> <p class="card-meta"> <span>30 Apr, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="save and curate bluesky posts save bluesky posts to your repo with categories. manage, sort, export, and view them anytime through your own curated feed. i had actually built a different version of this before. but over time, i felt like it needed a lot more. that version was a mix of google app script, telegram, google sheets, and a front-end. i went that way because i wanted to avoid dealing with authentication.
+
+later, after working on other bluesky projects, i realized that bookmarking is basically just building a curated feed of posts. i mean, i knew the idea was that, but i actually didn't dig deep enough to understand it.
+
+<blockquote class=&#34;bluesky-embed&#34; data-bluesky-uri=&#34;at://did:plc:xglrcj6gmrpktysohindaqhj/app.bsky.feed.post/3lnhc6tf3k22v&#34; data-bluesky-cid=&#34;bafyreibxp257ljbj7i5ad73o4a655lfg7mjwv27uflh3nknw6twcft75we&#34; data-bluesky-embed-color-mode=&#34;system&#34;><p lang=&#34;en&#34;>bookmarks are another feed - custom curated. so, create a custom lexicon, add post links to it and fetch posts using app.bsky.feed.getposts
+
+that&#38;#x27;s next.</p>&#38;mdash; romio (<a href=&#34;https://bsky.app/profile/did:plc:xglrcj6gmrpktysohindaqhj?ref_src=embed&#34;>@romiojoseph.github.io</a>) <a href=&#34;https://bsky.app/profile/did:plc:xglrcj6gmrpktysohindaqhj/post/3lnhc6tf3k22v?ref_src=embed&#34;>april 23, 2025 at 9:23 am</a></blockquote><script async src=&#34;https://embed.bsky.app/static/embed.js&#34; charset=&#34;utf-8&#34;></script>
+
+at first, i again tried the telegram bot flow. but as i got deeper into it, i saw that having a proper front-end would be much better. so, i built this new version.
+
+it’s really simple. all it does is save bluesky links in a categorized way inside a custom collection (`user.bookmark.feed.public`) in your repo. you can also edit, delete, and export anything whenever you want.
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://my-feed.pages.dev/bookmark/', '_blank', 'noopener');&#34;>
+    start curating
+</button>
+
+i built the front-end to make it easy for everyone to use. people just need to enter their handle or did, and it will load the specific collection from their repo and show it as a feed. it’s not like showing one post at a time. i went for a pinterest board style. it also lets you search, filter, and sort posts.
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://my-feed.pages.dev/', '_blank', 'noopener');&#34;>
+    see your feed
+</button>
+
+when i got to the deployment stage, i realized again that this is more like a curated feed, not just a simple bookmarking tool. it can be used for many purposes. that’s why i also added an option to share a link after applying filters and sorting. this way, people can create and share a feed based on a specific topic.
+
+##### acknowledging
+i understand that everybody wants a bookmarking flow like instagram. even i appreciate and want that in the bluesky app itself. but as of today (april 26, 2025), they haven't released anything about that feature. even if they do release it, i can still use this to display a public feed of posts that i curated over time. it has posts from months ago.
+
+and as time goes by, we often forget the old posts, and they fade away in the thousands of posts shared every minute. a curated feed is the best way to preserve posts that are worth saving.
+
+if you use this tool you can explore your collection in your repo using this tool. 
+
+https://pdsls.dev/
+
+visit this link and enter your handle. look for the custom collection - `user.bookmark.feed.public`
+
+<img src=&#34;https://atproto.com/_next/image?url=%2f_next%2fstatic%2fmedia%2fimage12.bd8affbd.png&#38;w=1080&#38;q=75&#34; alt=&#34;a hand-drawn diagram illustrates a hierarchical structure. on the left, a rectangle labeled 'repository' contains a stick figure representing a user. an arrow points from the repository to two folders, labeled conceptually as 'collections'. each of these folders has arrows pointing to multiple stacked squares on the right, labeled conceptually as 'records'. this depicts a system where a repository holds collections of records, accessible by a user.&#34;>
+
+*image credits: [https://atproto.com/articles/atproto-for-distsys-engineers](https://atproto.com/articles/atproto-for-distsys-engineers)"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/bluesky-bookmarks-feed" class="card"> <article class="blog-card"> <img src="https://my-feed.pages.dev/assets/social-image.png" alt="Cover for Save and Curate Bluesky Posts" class="card-image"> <div class="card-content"> <h2 class="card-title">Save and Curate Bluesky Posts</h2> <p class="card-description">Save Bluesky posts to your repo with categories. Manage, sort, export, and view them anytime through your own curated feed.</p> <p class="card-meta"> <span>26 Apr, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="vibe coding write longer posts, experience bluesky in any layout imaginable, integrate bluesky comments into your site, and more. i lost a few weeks of progress, and it really broke the streak i had with the bluesky api experiment. and after a break, coming back was a bit difficult as i had to find new things to do. but again, after spending time and wandering in the public api endpoints of bluesky, i found new ideas and built a lot of new things and even updated some older things. all thanks to claude 3.7, cursor, deepseek, vs code, and gemini 2.5 pro. 
+
+it’s really mind blowing what we can achieve with llms and open apis. i share all my projects as open source because only the idea and time are mine. the javascript is all developed by llms. and llms can do this because they learn from experienced and well educated developers.
+
+i spend significant time cross checking and writing detailed prompts. the most important thing i’ve learned from my experience is that no matter how difficult or feature rich it is, if it stays within the context capacity and output token limit, most llms can give back a pretty good project if we start with a detailed prompt. after that point, as we add new features and modifications, it starts to include bugs too. this is the breaking point for a vibe coder with no coding experience. html and css i can handle. but when a fix introduces several bugs, that’s where we’re really tested. i dropped many projects like this. but sometimes, i just can't sleep, and i spend hours fixing tiny bugs and other things. bluesky user statistics is one of the best in that. i had to spend a lot of time trying out different ways to finally reach here, along with countless to and fro conversations with llms.
+
+in order to show statistics, i need complete data, but fetching everything takes time. the turning point for me was when i stumbled on the car file offered by bluesky. bluesky lets users export a copy of their repo, but it’s in car (content addressable archives) format. it’s not like json and not human readable. but with multiple libraries, i found a way to do the analysis on the client side. it helped me convert the car to json, and then i could show stats the way i wanted.
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank', 'noopener');&#34;>
+    explore more bluesky projects
+</button>
+
+*more projects are in draft and idea stages. right now, i'm mostly focused on client side apps. but soon, i might try out some backend applications too.*"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/updates-on-bluesky-projects" class="card"> <article class="blog-card"> <img src="https://substackcdn.com/image/fetch/$s_!EB6C!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbe5fb813-53a0-4504-900a-d76a84f6ebf0_1000x453.png" alt="Cover for Vibe Coding" class="card-image"> <div class="card-content"> <h2 class="card-title">Vibe Coding</h2> <p class="card-description">Write longer posts, experience Bluesky in any layout imaginable, integrate Bluesky comments into your site, and more.</p> <p class="card-meta"> <span>21 Apr, 2025</span> <span> Spotlight</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="bluesky comments widget: add replies to your site share your page link on bluesky, then use this widget to show replies as comments on your site. no login or authentication needed. integrate replies to a specific bluesky post directly into your website or blog articles. this widget fetches the comment thread for a given post and displays it, allowing readers to see the conversation happening on bluesky without leaving your site.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/bluesky-comments-widget/', '_blank', 'noopener');&#34;>
+    live demo
+</button>
+
+#### features
+*   **embed bluesky replies:** show the discussion from a bluesky post thread with correct visual nesting.
+*   **parent post stats:** displays likes, reposts, replies, and quotes for the original post (hides stats with zero count), linked to bluesky where applicable.
+*   **no authentication required:** uses the public bluesky api.
+*   **simple integration:** add a `div` and a small javascript snippet to your html.
+*   **controls:** includes options to sort and search comments.
+*   **clickable comments:** entire comment bodies link back to the original reply post on bluesky.
+*   **customizable:** don't like the design? style the widget using `bluesky-comments.css`.
+*   **dependency:** uses [phosphor icons](https://phosphoricons.com/) (linked via cdn).
+
+#### how to use
+
+1.  **get the files:** download `bluesky-comments.js` and `bluesky-comments.css`. place them in your website's project folder (e.g., `js/` and `css/`).
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://github.com/romiojoseph/bluesky/tree/main/bluesky-comments-widget/', '_blank', 'noopener');&#34;>
+	download
+</button>
+
+2.  **link files in html:**
+in the `<head>` of your html, link the css files. **load `bluesky-comments.css` after any general stylesheets (like `style.css`) if you encounter styling conflicts.**
+
+```
+<head>
+    <link rel=&#34;stylesheet&#34; href=&#34;path/to/your/css/style.css&#34;> <!-- your general styles -->
+    <link rel=&#34;stylesheet&#34; href=&#34;path/to/your/css/bluesky-comments.css&#34;> <!-- widget styles -->
+    <link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css&#34; />
+</head>
+```
+
+before the closing `</body>` tag, link the javascript file:
+```
+<body>
+    <script src=&#34;path/to/your/js/bluesky-comments.js&#34;></script>
+    <!-- initialization script below -->
+</body>
+```
+*(update `path/to/your/css/` and `path/to/your/js/`)*
+
+3.  **add the container:** place this empty `div` in your html where the comments should appear. give it a unique id.
+```
+<div id=&#34;my-bluesky-comments&#34;>
+    <p><i>loading bluesky comments...</i></p>
+</div>
+```
+
+4.  **initialize the widget:** add the following `<script>` block after including `bluesky-comments.js` (usually just before `</body>`). *update `targetcontainerid` and `blueskyposturi` below.*
+```
+<script>
+    document.addeventlistener('domcontentloaded', function () {
+        const targetcontainerid = 'my-bluesky-comments';
+        const blueskyposturi = 'at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3lktlkvn2lc2k'; // <<<--- change this uri
+        if (typeof loadandrendercomments === 'function') {
+            loadandrendercomments(targetcontainerid, blueskyposturi);
+        } else {
+            console.error(&#34;error: loadandrendercomments function not found.&#34;);
+            const container = document.getelementbyid(targetcontainerid);
+            if (container) {
+                container.innerhtml = '<p class=&#34;bsky-comments-error&#34;>error: could not load comments component.</p>';
+            }
+        }
+    });
+</script>
+```
+
+#### customization
+*   **styling:** modify `bluesky-comments.css` (css variables are available at the top).
+*   **behavior:** adjust constants like `bsky_max_initial_comments`, `bsky_comments_increment`, or `bsky_indent_size_px` in `bluesky-comments.js`.
+
+#### dependencies
+*   [phosphor icons](https://phosphoricons.com/) (via cdn)
+
+#### sample html template
+
+```html
+<!doctype html>
+<html lang=&#34;en&#34;>
+
+<head>
+    <meta charset=&#34;utf-8&#34;>
+    <meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;>
+    <title>bluesky comments widget example</title>
+
+    <!-- link to the widget's css file (in the same directory) -->
+    <link rel=&#34;stylesheet&#34; href=&#34;bluesky-comments.css&#34;>
+
+    <!-- link to google fonts (optional, but used by the css) -->
+    <link rel=&#34;preconnect&#34; href=&#34;https://fonts.googleapis.com&#34;>
+    <link rel=&#34;preconnect&#34; href=&#34;https://fonts.gstatic.com&#34; crossorigin>
+    <link
+        href=&#34;https://fonts.googleapis.com/css2?family=inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&#38;display=swap&#34;
+        rel=&#34;stylesheet&#34;>
+
+    <!-- link to phosphor icons css (required for icons) -->
+    <link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css&#34; />
+</head>
+
+<body>
+    <div class=&#34;widget-wrapper&#34;>
+        <div id=&#34;bluesky-comment-widget&#34;>
+            <!-- initial placeholder message -->
+            <p><i>loading bluesky comments...</i></p>
+        </div>
+    </div>
+    <!-- include the widget's javascript file (in the same directory) -->
+    <!-- important: load this script after the container div -->
+    <script src=&#34;bluesky-comments.js&#34;></script>
+    <!-- initialize the script -->
+    <script>
+        document.addeventlistener('domcontentloaded', function () {
+            // --- configuration ---
+            // 1. id of the container div above. must match.
+            const targetcontainerid = 'bluesky-comment-widget';
+
+            // 2. at uri of the bluesky post to display replies from.
+            //    find via post options (...) > copy link to post > extract 'at://...' part.
+            const blueskyposturi = 'at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3lktlkvn2lc2k';
+            // 3. load the comments.
+            if (typeof loadandrendercomments === 'function') {
+                loadandrendercomments(targetcontainerid, blueskyposturi);
+            } else {
+                console.error(&#34;error: loadandrendercomments function not found. ensure bluesky-comments.js is loaded correctly and before this script block.&#34;);
+                const container = document.getelementbyid(targetcontainerid);
+                if (container) {
+                    container.innerhtml = '<p class=&#34;bsky-comments-error&#34; style=&#34;padding:1em; text-align:center;&#34;>error: could not load comments component javascript.</p>';
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
+```
+
+
+---
+
+*i'm not a coder. i use llms like claude, mistral, meta ai, chatgpt, and gemini to create things that fit what i need. i share them so others can use them too. the code may not follow standard rules, so if you're a developer and see ways to make it better, i'd really appreciate your help.*"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/bluesky-comments-widget" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/bluesky-comments-widget/assets/social-image.png" alt="Cover for Bluesky Comments Widget: Add replies to your site" class="card-image"> <div class="card-content"> <h2 class="card-title">Bluesky Comments Widget: Add replies to your site</h2> <p class="card-description">Share your page link on Bluesky, then use this widget to show replies as comments on your site. No login or authentication needed.</p> <p class="card-meta"> <span>14 Apr, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="bluesky post analyzer analyze bluesky posts with detailed stats - track likes, reposts, replies, and quotes. view engagement timelines, user interactions, and performance metrics. enter a bluesky post url to analyze posts with detailed stats — track likes, reposts, replies, and quotes. view engagement timelines, user interactions, and performance metrics.
+
+*no authentication is needed. bluesky is an open platform. but respect authors' privacy when using this tool.*
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/bluesky-post-analyzer/', '_blank');&#34;>
+    try it
+</button>
+
+###### disclaimer
+this project is part of my ongoing exploration of the bluesky api.  while i’ve built other tools for user stats, this one focuses only on post stats. note: the repost timestamp isn’t available from the `getrepostedby` api, so that data won’t show in the chart.
+
+you can track how any bluesky post performs over time. replies and quotes show up in their own tables. you can sort and search through the rows. you’ll also see basic stats of users who liked or reposted — like followers, following, total posts, labels, and join date. this helps check if they’re bots, spam accounts, or real users.
+
+if there are many interactions, loading all the data might take a while. these stats are helpful for folks using bluesky for marketing. regular users can also get a quick idea of how their posts are doing. this website runs fully in your browser using the bluesky appview api. nothing is sent anywhere. no analytics or trackers. all javascript was written with help from llms
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/bluesky-post-analyzer" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/bluesky-post-analyzer/assets/social-image.png" alt="Cover for Bluesky Post Analyzer" class="card-image"> <div class="card-content"> <h2 class="card-title">Bluesky Post Analyzer</h2> <p class="card-description">Analyze Bluesky posts with detailed stats - track likes, reposts, replies, and quotes. View engagement timelines, user interactions, and performance metrics.</p> <p class="card-meta"> <span>17 Feb, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="bluesky user statistics enter a bluesky username to see stats on posts, likes, reposts, and follows. view hashtag, mention, link, and word usage, along with their counts. enter any bluesky username to see stats on posts, likes, reposts, and follows. you’ll also get counts for hashtags, mentions, links, and words. click on any item to see where it appears.
+
+**no login needed.** bluesky is open. but please respect others' privacy when using this tool.
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/bluesky-user-statistics/', '_blank');&#34;>
+    try now!
+</button>
+
+###### disclaimer
+this tool is a follow-up to [convert bluesky car to json](https://romiojoseph.github.io/bluesky/download-car-json-blob/). with this, you can view stats for any bluesky user—posts, likes, reposts, and follows.
+
+as i kept adding features, i saw it could do more. my favorite part is content analysis. it shows what i talk about most, which hashtags i use, and which links i often share.
+
+it’s helpful for people using bluesky for marketing. but even regular users can check in now and then to get an idea of how they’re doing on the platform.
+
+this all started because i wanted to track my own activity. i know people will use it in their own way. adding login support might help, but it would also make things more complicated for casual users.
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/bluesky-user-statistics" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/bluesky-user-statistics/assets/social-image.png" alt="Cover for Bluesky User Statistics" class="card-image"> <div class="card-content"> <h2 class="card-title">Bluesky User Statistics</h2> <p class="card-description">Enter a Bluesky username to see stats on posts, likes, reposts, and follows. View hashtag, mention, link, and word usage, along with their counts.</p> <p class="card-meta"> <span>12 Feb, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="download bluesky repository and blobs get bluesky car files, convert them to json, and analyze posts, likes, and follows. retrieve media files (blobs) for offline access. bluesky gives you car files as a snapshot of public data on the at protocol. this includes posts, likes, follows, profiles, and more. you can get this file from **settings > account > export my data**, or just enter your handle below.
+
+*no authentication is needed. bluesky is open. but respect authors' privacy when using this tool.*
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/download-car-json-blob/', '_blank');&#34;>
+    try it
+</button>
+
+large accounts might take a few minutes to download. you’ll find another export tool link at the bottom. this tool helps you back up your full account data and media files for offline use.
+
+### car file
+
+downloading a car (content addressable archive) may take time, depending on the account size.  
+after download, the file is converted to json format.  
+you can then see things like post counts, likes, and reposts — either as a full json or split by type.  
+you also get extra info like did (decentralized id), pds (personal data server), and handle history.
+
+you can also try a [go script that converts car to json](https://github.com/romiojoseph/bluesky/tree/main/go-scripts/car-to-json) on your own device.
+
+### blobs
+
+this part lets you download blobs (media files) from an account. it shows you the number of blobs available and helps you download them all. for large accounts, it might take some time.
+
+**profile, thread, feeds and lists downloader**
+[click here to use the post export tool](https://romiojoseph.github.io/bluesky/export-bluesky-posts/) to get bluesky data in json. you can download posts, followers, following, or lists. you can also paste a profile, list, or feed link, or even a single post to get its full thread and metadata.
+
+this site runs fully in your browser using the bluesky appview api. no data is sent anywhere. no analytics or trackers. the javascript was built with help from tools like mistral ai and google ai studio.
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/download-car-json-blob" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/download-car-json-blob/assets/social-image.png" alt="Cover for Download Bluesky Repository and Blobs" class="card-image"> <div class="card-content"> <h2 class="card-title">Download Bluesky Repository and Blobs</h2> <p class="card-description">Get Bluesky CAR files, convert them to JSON, and analyze posts, likes, and follows. Retrieve media files (blobs) for offline access.</p> <p class="card-meta"> <span>08 Feb, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="bluesky trending topics bluesky is becoming the next big thing. a moderated space where people gather to discuss what's happening, free from hate speech and disruptive behavior. this is a collection of feeds made by [@trending.bsky.app](https://bsky.app/profile/trending.bsky.app) on bluesky. they were created to [show what's trending](https://bsky.app/profile/pfrazee.com/post/3led2ug5eis2f) on the platform.
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/trending-topics/', '_blank');&#34;>
+    try it
+</button>
+
+sometimes, [older feeds get archived](https://bsky.app/profile/pfrazee.com/post/3led2uhbmns2f) as snapshots once trends fade. right now, feeds don’t include a `createdat` field—only `indexedat`, which shows when the record was first seen. use the buttons to view posts on bluesky or search for them on news sites.
+
+this website highlights trending topics on bluesky. right now, the only way to explore trends is by visiting the trending account and browsing its feeds.
+
+i wanted to make a calendar view so people could check trends by date. but since the feeds don’t have proper timestamps, i built it this way instead. maybe i’ll revisit it later with better ideas.
+
+bluesky feels like the next big space where people can talk about what’s happening, without hate speech or noisy behavior. it’s more like a moderated public square where conversations can stay meaningful.
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/bluesky-trending-topics" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/trending-topics/assets/social-image.png" alt="Cover for BlueSky Trending Topics" class="card-image"> <div class="card-content"> <h2 class="card-title">BlueSky Trending Topics</h2> <p class="card-description">BlueSky is becoming the next big thing. A moderated space where people gather to discuss what&#39;s happening, free from hate speech and disruptive behavior.</p> <p class="card-meta"> <span>05 Feb, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="new horizons - real-time news from media &#38; organizations on bluesky no account needed, no trackers, no analytics. just real time news from bluesky media profiles, tech companies, organizations, institutions, and journalists. ### streams news and posts straight from bluesky
+
+this website runs entirely in your browser using the bluesky appview api, with no data sent anywhere. no analytics or trackers are used, so you can explore freely. all javascript was developed with the help of llms like mistral ai, claude, and google ai studio.
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/new-horizons-news-feed/', '_blank');&#34;>
+    try now!
+</button>
+
+if you want to browse the bluesky way, here are the links. you can pin it to your home. as more companies, institutions, and organizations join bluesky, you can use it as a one stop solution for all kinds of updates.
+
+**feeds and lists:**
+- [recent news](https://bsky.app/profile/did:plc:xglrcj6gmrpktysohindaqhj/lists/3lc34yoopje27)  
+- [trending news](https://bsky.app/profile/did:plc:xglrcj6gmrpktysohindaqhj/feed/aaahn42hkwvf2)  
+- [recent tech updates](https://bsky.app/profile/did:plc:xglrcj6gmrpktysohindaqhj/lists/3lh6agik2oh2x)  
+- [trending tech updates](https://bsky.app/profile/did:plc:xglrcj6gmrpktysohindaqhj/feed/aaanqiwe5dvuu)
+
+> you can pin the list in the bluesky app for direct access to news, free from algorithms. if you choose the feed, it follows hn ranking from the past 12 hours.
+
+**aggregating real-time news** from bluesky media profiles, tech companies, organizations, institutions, and journalists.
+
+you can fork this project and create your own version, adding different feeds and lists. the code is available on [github](https://github.com/romiojoseph/bluesky/tree/main/new-horizons-news-feed); all you need are the lists and feeds. please note, the entire javascript is created with the help of llms.
+
+all post data comes from bluesky, where the accounts on the list have posted it. this project simply aggregates and visualizes that data in a news media format. it's part of my ongoing experience with the bluesky api.
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/new-horizons-news-feed" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/new-horizons-news-feed/assets/social-image.png" alt="Cover for New Horizons - Real-Time News from Media &#38; Organizations on Bluesky" class="card-image"> <div class="card-content"> <h2 class="card-title">New Horizons - Real-Time News from Media &amp; Organizations on Bluesky</h2> <p class="card-description">No account needed, no trackers, no analytics. Just real time news from Bluesky media profiles, tech companies, organizations, institutions, and journalists.</p> <p class="card-meta"> <span>04 Feb, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="export posts from bluesky export bluesky posts in json format, including profile data, followers, following, and lists. customize exports using profile, list, or feed links. export bluesky posts in json format. you can choose profile-based exports like followers, following, and lists. or paste any profile, list, or feed link for custom downloads. you can also enter a post link to download its full thread metadata.
+
+*no authentication needed. bluesky is open. but please respect user privacy when using this tool.*
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/export-bluesky-posts/', '_blank');&#34;>
+    try it
+</button>
+
+###### disclaimer
+social media is changing, and bluesky is one of those new steps forward.  
+i see a lot of potential here, even if it's still early. no one knows how fast a platform will grow. every second, new posts show up. for people researching or building tools, raw data helps spot trends.
+
+many apis are getting expensive to use. bluesky is different — most endpoints don’t need login.  
+that’s a big win. i first wrote a python script (with help from llms) to fetch my own posts.  all my bluesky tools grew from there.
+
+this isn't a huge project, but i think it's helpful. my goal is to make it simple and useful for anyone who wants to try.
+
+the data is exported in json. that format includes all the key details. because of system limits, only 100 posts are processed per batch. if you’re downloading more, it will run in multiple steps. sometimes follower or following counts may not be accurate — this might be a bluesky bug. you can [read more about it here](https://www.google.com/search?q=bluesky+count+issue&#38;ie=utf-8).
+
+everything runs in your browser. no data is sent anywhere. no analytics. no trackers. i built the javascript with the help of llms like mistral ai, claude, and google ai studio.
+
+if you need to fetch more than 25,000 posts or want to use it from the terminal, you can try the [python script on github](https://github.com/romiojoseph/bluesky/tree/main/python-scripts/export-bluesky-posts). it’s simple and works well.
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/export-bluesky-posts" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/export-bluesky-posts/assets/social-image.png" alt="Cover for Export Posts from Bluesky" class="card-image"> <div class="card-content"> <h2 class="card-title">Export Posts from Bluesky</h2> <p class="card-description">Export Bluesky posts in JSON format, including profile data, followers, following, and lists. Customize exports using profile, list, or feed links.</p> <p class="card-meta"> <span>30 Jan, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="download bluesky video easily download bluesky videos in available resolutions or get the playlist url to stream. respect authors' privacy and give proper credit when using this tool. bluesky is open. if you don’t want to download the video, you can stream it using vlc. copy the playlist url below, open vlc, go to **media > stream > network**, and paste the link.
+
+*if you choose to download, please credit the author and respect any privacy notes in their profile or post.*
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/video-download/', '_blank');&#34;>
+    try it
+</button>
+###### disclaimer
+this tool is meant for personal use. since bluesky is public, anyone can access posts—even without an account.
+
+videos are streamed using **m3u8 playlist files**. these are simple text files listing media sources like resolution options. each bluesky video post has a playlist url. clicking on the url will download the m3u8 file. you can paste this url into vlc or download a specific resolution from it.
+
+the tool doesn’t store or track anything. how you use it is up to you.
+
+<mark>extra notes</mark>
+- **dids** (decentralized identifiers): permanent account ids for decentralized identity.
+- **cids** (content identifiers): hashes that track specific versions of records.
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/bluesky-video-download" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/video-download/assets/social-image.png" alt="Cover for Download Bluesky Video" class="card-image"> <div class="card-content"> <h2 class="card-title">Download Bluesky Video</h2> <p class="card-description">Easily download Bluesky videos in available resolutions or get the playlist URL to stream. Respect authors&#39; privacy and give proper credit when using this tool.</p> <p class="card-meta"> <span>23 Jan, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="photostream: instagram-style bluesky image feed browse bluesky feeds and lists like instagram. no login, no tracking. view any feed or list you like. ### browse bluesky however you like
+
+bluesky offers incredible flexibility. if someone wanted an instagram-like client tailored to individual preferences, it's entirely possible to build one (i'm not quite there yet). this project explores that idea. right now it's just a front end and properly linked to their respective posts. with bluesky now supporting video, creating short-form and long-form video feeds (yes, youtube-like apps!) also seems likely in the future. the platform's openness is amazing.
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/photo-stream/', '_blank');&#34;>
+    try now!
+</button>
+
+for this project, i've added a few feeds and lists, and you'll land on the discover feed offered by bluesky itself. the condition is that a post will be shown only if it has one or more images. bring your own bluesky feed or list url to fetch posts. your url will be saved for future visits. if your browser has autofill enabled, you can quickly switch between multiple links you've used before. links, hashtags, and mentions are clickable. click any image to open it in a new tab.
+
+i don't control or take responsibility for the posts shown here. they're from their respective owners. feel free to crosscheck with the original posts. each one is properly linked to its author and source.
+
+this website runs entirely in your browser using the bluesky appview api, with no data sent anywhere. no analytics or trackers are used, so you can explore freely. all javascript was developed with the help of llms like mistral ai, claude, and google ai studio. i built this to make bluesky accessible to people who prefer not to sign up or log in (but i highly recommend creating an account, as bluesky has the potential to become a better platform).
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/bluesky-photo-stream" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/photo-stream/assets/social-image.png" alt="Cover for PhotoStream: Instagram-style Bluesky Image Feed" class="card-image"> <div class="card-content"> <h2 class="card-title">PhotoStream: Instagram-style Bluesky Image Feed</h2> <p class="card-description">Browse Bluesky feeds and lists like Instagram. No login, no tracking. View any feed or list you like.</p> <p class="card-meta"> <span>10 Jan, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="bluesky spotlight feeds browse bluesky without an account. check out multiple feeds, view post details, and download metadata. ### understanding bluesky
+
+this site uses no trackers or analytics. you can explore freely. the feeds here include: recent news, web dev, science, astronomy, tech, movies, bluesky team, and popular profiles.
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/spotlight-feeds/', '_blank');&#34;>
+    try it
+</button>
+
+this project came from reading bluesky docs and playing with llms. one day i saw people sharing cool tools built on bluesky. that pushed me to try something. to start, i had to understand how bluesky works. this project helped me learn and sparked new ideas.
+
+bluesky is open. anyone can build on it using public data. as more folks and companies join in, its potential will grow. the only way to know its limits is to build and test ideas.
+
+at first, this was just a test script to post something. then i wrote a python script with mistral ai to fetch raw post data. next, i exported posts from my feeds and lists and made them easier to browse. yes, people can see the same stuff directly on bluesky — but this is about exploration. one step led to the next.
+
+the goal was to make bluesky easier to explore. you can check real-time post details, view raw json, open author profiles, or tap on any image to view it in a new tab.
+
+*i don’t control or verify the posts shown here. they belong to their authors. every post links back to its source.*
+
+here’s something cool: every bluesky username with `.bsky.social` is also a website. for example, just share `username.bsky.social` — no need for full links. it will redirect to the profile page.
+
+so, every user has a basic website and rss feed now.
+
+this project and my other one, an rss reader helped me rethink how i consume news. i hope more people try bluesky soon.
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/spotlight-feeds" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/spotlight-feeds/assets/social-image.png" alt="Cover for Bluesky Spotlight Feeds" class="card-image"> <div class="card-content"> <h2 class="card-title">Bluesky Spotlight Feeds</h2> <p class="card-description">Browse Bluesky without an account. Check out multiple feeds, view post details, and download metadata.</p> <p class="card-meta"> <span>06 Jan, 2025</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="rss feed reader (pwa) easily track and find posts from all your rss feeds in one place. stay updated with new content from your favorite sources. simple and user-friendly. ### rss feed reader
+*a simple rss feed reader for configuring and displaying multiple feeds. easily track and find posts from all your rss feeds in one place. stay updated with new content from your favorite sources. simple and user-friendly. install it as a pwa for quick access and a smooth experience.*
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/rss-feed-reader', '_blank');&#34;>
+    try it
+</button>
+
+**disclaimer:** this platform's javascript is fully built using mistral ai. it uses a cors proxy to fetch rss feeds. all data is processed locally in your browser, and your feeds are stored on your device without being sent to any server.
+
+#### faq
+first of all, i haven’t added any trackers or analytics, so feel free to browse without worry.
+
+###### why another feed reader?
+honestly, i built this for myself because a few weeks ago, omnivore announced [they were joining elevenlabs](https://www.theverge.com/rss/index.xml) and [shutting down their service.](https://blog.omnivore.app/p/details-on-omnivore-shutting-down) i started searching for a new one but thought, why not try building one myself? and here i am. my initial plan was to create an android app, but i temporarily settled for this. maybe someday i'll revisit the idea.
+
+###### what is an rss feed?
+rss feeds provide updates about the latest posts, blogs, or articles from a website. for example, you can check this feed: [the verge rss feed](https://www.theverge.com/rss/index.xml).
+
+###### how can i find an rss feed for a website?
+many blogs and websites have rss feeds by default. to check, visit [feedsearch](https://feedsearch.dev/) and paste any website url. it will show if an rss feed is available.
+
+###### why use rss feeds?
+when you subscribe to an rss feed using an rss reader app, you get updates directly in your feed. this saves you from manually checking websites, newsletters, or profiles. you can curate your own news feed and stay in control of what you want to see. [shared a blog here](https://romio.substack.com/p/rss-feeds-vs-email-subscriptions).
+
+###### which rss reader apps should i try?
+if you're not happy here, you can check out the vivaldi browser, it includes an rss reader, so you can use it without relying on third-party apps. however, this feature is currently unavailable on their mobile app. other options include apps like [feeder](https://feeder.co/).
+
+###### do rss feeds only show a few posts and replace old ones?
+yes, rss feeds typically show a limited number of recent posts (e.g., 10-20), and older ones are replaced as new content is added. to keep track of older posts, you can [bookmark or save the link using a service like raindrop](https://raindrop.io).
+
+###### what is a cors proxy, and why is it used?
+a cors proxy allows the app to fetch rss feeds from different domains by bypassing cross-origin restrictions. this ensures the app can access and display feeds from various sources seamlessly. for this app, i used the [allorigins](https://allorigins.win/) cors proxy service—thank you for the great service! the proxy acts as an intermediary, fetching the feed content and returning it to the app for display.
+
+###### how often are the feeds refreshed?
+the feeds are refreshed every 6 hours. the application uses a service worker to cache the feed data and set an expiration time of 6 hours. after this period, the feed data is refreshed from the server.
+
+###### what happens if i manually refresh the feeds?
+you can manually refresh the feeds by pressing &#34;ctrl+f5&#34; the tab (on mobile, swipe down twice). this triggers a fresh fetch of the feed data, bypassing the cache.
+
+###### what happens if i clear my browser data, including cache and cookies?
+if you clear your browser data, including cache and cookies, the cached feed data, configured feeds, and the last fetched timestamps will be lost. the application will need to fetch the feed data fresh from the server the next time you select a feed.
+
+###### where is my data processed?
+all data processing, including filtering and rendering, happens locally within your browser. your configured feeds are stored in your browser's local storage.
+
+###### is my data sent to any servers?
+no, your configured feeds and search data are not sent to any external servers. all operations are performed locally within your browser.
+
+###### remember to periodically download csv backup
+if you regularly add feed urls manually, i suggest you use the google sheet way for easier management. however, if that feels like too much work, remember to download the csv every now and then to keep a backup of your feeds.
+
+###### how is the selected feed preserved across page reloads?
+the selected feed url is stored in local storage. on page reload, the application retrieves the selected feed url from local storage and sets the dropdown accordingly. this ensures that your feed selection is preserved across page reloads.
+
+###### add on: personal telegram bot for sending rss feed updates to a telegram channel
+this script allows you to fetch rss feeds, check for new posts, and send them to a telegram channel. the script uses google apps script to handle the rss feed fetching, telegram messaging, and google sheets for tracking sent posts. [get it here](https://github.com/romiojoseph/open-source/tree/main/telegram-bots/rss-new-post-alert-via-telegram).
+
+###### how to get a youtube channel's rss feed?
+to find the youtube rss feed for a channel, go to the channel's page. right-click on the page and choose &#34;view page source.&#34; then, search for `channel_id=` in the source code. copy the value that follows, which is the channel's id. to create the feed url, use the format: `https://www.youtube.com/feeds/videos.xml?channel_id=channel_id`. replace `channel_id` with the id you copied. this will give you the rss feed for that channel
+
+###### these faqs were also created by mistral ai
+i shared the entire project code with mistral ai and asked it to generate faqs based on the code.
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/rss-feed-reader" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/rss-feed-reader/refs/heads/main/assets/social-image.png" alt="Cover for RSS Feed Reader (PWA)" class="card-image"> <div class="card-content"> <h2 class="card-title">RSS Feed Reader (PWA)</h2> <p class="card-description">Easily track and find posts from all your RSS feeds in one place. Stay updated with new content from your favorite sources. Simple and user-friendly.</p> <p class="card-meta"> <span>24 Nov, 2024</span> <span> Open sourced</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="imdb watchlist analyzer - visualize your movie and content watching experience analyze your imdb watchlist data with this interactive dashboard. upload your csv export from imdb to visualize insights on movies, tv series, and other types. ### imdb watchlist analyzer content
+
+upload your csv export from imdb to visualize insights on movies, tv series, and mini-series you've watched and rated. no data is sent anywhere; all analysis is done locally in your browser. sign in to your imdb account, hover over your username, click &#34;your watchlist,&#34; then click &#34;export&#34; and download the file when it is ready.
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/imdb-watchlist-export-visualizer', '_blank');&#34;>
+    analyze your watchlist
+</button>
+
+- **movie watching experience**: a breakdown of your movie ratings, showing how many films you found boring (1-3), average (4-6), good (7-9), or masterpiece (10).
+- **other content experience**: similar rating distribution for tv series, mini-series, and other content types, helping you compare your experience with different formats.
+- **era-wise metrics**: how your ratings are distributed across different time periods, from classic to modern content, revealing your experiences for different eras.
+- **you vs imdb**: compare your personal ratings with imdb's community scores to see how your taste aligns with or differs from the general audience.
+- **yearly metrics**: track your viewing history based on the release year of the content, showing the total watched and rating breakdowns for each year.
+- **genre analysis**: a visual map of your most-watched genres, with larger blocks representing genres you watch more. please note that imdb assigns multiple genres to a single title (movie, series, or other content). if a title has multiple genres or sub-genres, each one will be counted once in all the main genres.
+- **genre metrics**: shows how you rate different genres, helping you identify which categories you consistently enjoy or dislike.
+- **directors analysis**: a breakdown of your top 15 most-watched directors, showing your rating distribution for each director's work.
+- **runtime analysis**: distribution of content by runtime duration, categorized into different time ranges with rating breakdowns.
+
+---
+
+<mark>better view on desktop</mark>
+
+- **disclaimer**: when you visit this website, you'll see dummy data pre-loaded to populate the content and charts. please note that this dummy data may not match or align with every part of the project. to view the correct data, upload your own exported csv file.
+- **transparency notice**: this platform is designed to help you analyze your personal content-watching experience by allowing you to select your exported watchlist csv file. no data is collected, stored, or shared. all selected files are processed and analyzed locally on your device.
+- **credits**: javascript created with mistal ai, claude, and google ai studio. chart library by [apexcharts](https://apexcharts.com).
+- **note**: dedicated to all the movie lovers out there. discover your unique taste among the countless other viewers and the hidden patterns in your watching experiences. also, if you like, [join movies &#38; tv shows bluesky feed](https://bsky.app/profile/did:plc:xglrcj6gmrpktysohindaqhj/feed/moviestvshows).
+- **feel free to explore**: check out the source code on [github](https://github.com/romiojoseph/imdb-watchlist-export-visualizer) for more details. there are no analytics tools or trackers used here, so feel free to browse away with peace of mind."> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/imdb-watchlist-export-visualizer" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/imdb-watchlist-export-visualizer/refs/heads/main/assets/social-image.png" alt="Cover for IMDb Watchlist Analyzer - Visualize Your Movie and Content Watching Experience" class="card-image"> <div class="card-content"> <h2 class="card-title">IMDb Watchlist Analyzer - Visualize Your Movie and Content Watching Experience</h2> <p class="card-description">Analyze your IMDb watchlist data with this interactive dashboard. Upload your CSV export from IMDb to visualize insights on movies, TV series, and other types.</p> <p class="card-meta"> <span>20 Nov, 2024</span> <span> Open sourced</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="bluesky advanced search a simple tool to search bluesky posts, users, and tags. just type what you need, and it'll open a new tab with the required specific search formats. a simple tool to search bluesky posts, users, and tags. just type what you need, and it’ll open a new tab with the right search format.  this tool is based on tips from the [bluesky blog](https://bsky.social/about/blog/05-31-2024-search), which says:  *“over time, we'll make these features easier to use directly within the bluesky app. think of these as advanced features!”*
+
+<button class=&#34;btn-primary&#34; onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/advanced-search/', '_blank');&#34;>
+    try it
+</button>
+
+javascript made by mistral ai. built for regular folks who don’t know or want to deal with search tricks like `from:`, `to:`, `mentions:`, hashtags, or date filters. you can even paste a url into the bluesky search to find posts that shared it.
+
+some people [liked it and are sharing it](https://bsky.app/search?q=https%3a%2f%2fromiojoseph.github.io%2fbluesky%2fadvanced-search%2f).
+
+---
+
+**free &#38; open-source bluesky tools**
+a collection of free and open-source bluesky tools, with every javascript created using ai, aka vibe coding. no ads, no paywalls and no trackers.
+
+<button onclick=&#34;window.open('https://romiojoseph.github.io/bluesky/', '_blank');&#34;>
+explore bluesky tools
+</button>
+
+for more projects, visit: https://romiojoseph.github.io/open-source/"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/bluesky-advanced-search" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/advanced-search/assets/social-image.png" alt="Cover for Bluesky Advanced Search" class="card-image"> <div class="card-content"> <h2 class="card-title">Bluesky Advanced Search</h2> <p class="card-description">A simple tool to search Bluesky posts, users, and tags. Just type what you need, and it&#39;ll open a new tab with the required specific search formats.</p> <p class="card-meta"> <span>14 Nov, 2024</span> <span> Bluesky</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="atproto blog supported styles this documentation covers the supported markdown styles and tags for this blog. use this as a quick reference to format your content effectively. markdown is a lightweight markup language that allows you to create well-structured content using plain text formatting. this project supports a variety of markdown tags to help you create content that’s consistent and visually organized.
+
+*if you're using a markdown editor like obsidian, you can apply most tags by simply typing in plain text, then right-clicking to choose the appropriate tag.*
+### 1. headings
+organize content with clear heading levels. use `#` for different heading levels, ranging from `# h1` to `###### h6`.
+# heading 1
+## heading 2
+### heading 3
+#### heading 4
+##### heading 5
+###### heading 6
+
+### 2. lists
+use both ordered and unordered lists.
+
+1. for ordered list, type a number, then a full stop, and then a space.
+- for unordered list - also known as bullet points -  type a star (`*`) or a hyphen (`-`) or a plus (`+`) and then a space.
+
+and for nested lists, just create your desired list and hit enter then tab. for eg;
+
+* this is a bullet point, you can do the same for numbered lists.
+	* this is a nested bullet point
+		* again nested. just hit enter and then tab.
+### 3. emphasis
+emphasize keywords or important sections of text.
+
+* **bold:** use `**text**` for bold.
+* *italic*: use `*text*` for italic.
+* <u>underline</u>: use `<u>u tag</u>` to achieve underlining.
+* ~~strikethrough~~: use double tilde `~~` before and after a text.
+* ***bold and italic:*** use `***text***` for bold and italic
+* <mark>**mark**</mark>: use `<mark>text</mark>` for marking the text like this.`
+* **superscript:** to create superscript text, use the `<sup>` tag. eg, e = mc<sup>2</sup> (`e = mc<sup>2</sup>`). you can mainly use it for giving footnotes.
+* **subscript:** for subscript text, use the `<sub>` tag. h<sub>2</sub>o (`h<sub>2</sub>o`)
+* `inlince code:` use `the symbol called **backtick**` for inline code, it looks like this (`)
+* horizontal line: either type `---` or `***`
+### 4. blockquotes
+highlight key points or quotes including citation.
+
+>murphy's law doesn't mean that something bad will happen. it means that whatever *can* happen, will happen. and that sounded just fine to us.
+><cite>- cooper | interstellar (2014)</cite>
+
+- use `>` before a paragraph to create a blockquote.
+- and to add a citation, use `<cite>citation text</cite>`
+
+### 5. links
+easily add [hyperlinks](https://www.google.com/) and reference links. the syntax is a combination of closed and open brackets.
+
+```
+[link text](https://www.domain.com)
+```
+
+### 6. buttons
+sometimes we need buttons. i have created two types of buttons. one as the default button and one as the primary button. check the below code snippets.
+``` 
+<button onclick=&#34;window.open('https://www.domain.com', '_blank', 'noopener');&#34;>
+	default button
+</button>
+```
+
+<button onclick=&#34;window.open('https://www.domain.com', '_blank', 'noopener');&#34;>
+	default button
+</button>
+
+see how simple it is... just copy paste this code snippet, change the link and the button label.
+
+##### 6.1 alerts
+
+<div class=&#34;at-proto-blog-alert at-proto-blog-alert-info&#34;>
+        this is an info alert!
+  </div>
+
+<div class=&#34;at-proto-blog-alert at-proto-blog-alert-success&#34;>
+        this is a success alert!
+   </div>
+
+<div class=&#34;at-proto-blog-alert at-proto-blog-alert-warning&#34;>
+        this is a warning alert!
+</div>
+
+<div class=&#34;at-proto-blog-alert at-proto-blog-alert-danger&#34;>
+        this is a danger alert!
+</div>
+
+---
+
+### 7. media
+
+##### 7.1 images
+use the html `<img>` tag to embed images. just copy the code below, update the image path, and write a short alt text. html copy edit
+
+```
+<img src=&#34;https://www.domain.com/assets/media/images/image.avif&#34; alt=&#34;describe the image&#34;>
+```
+
+<img src=&#34;https://raw.githubusercontent.com/romiojoseph/blogspot/refs/heads/main/blog/media/images/support-styles-image.png&#34; alt=&#34;obsidian is the best markdown editor&#34; title=&#34;obsidian is the best markdown editor&#34;>
+
+##### 7.2 video
+for video use the below code snippet. call raw links from external libraries, which means the url ends with the video extension and if you run that url on browser, it will play a video using browser video player.
+
+```
+<video controls>
+    <source src=&#34;https://github.com/romiojoseph/blogspot/raw/refs/heads/main/blog/media/videos/video.mp4&#34; type=&#34;video/mp4&#34;>
+    your browser does not support the video tag.
+</video>
+```
+
+
+<video controls>
+    <source src=&#34;https://github.com/romiojoseph/blogspot/raw/refs/heads/main/blog/media/videos/video.mp4&#34; type=&#34;video/mp4&#34;>
+    your browser does not support the video tag.
+</video>
+
+##### 7.3 audio
+for video use the below code snippet. the same rule applies here.
+
+```
+<audio controls>
+    <source src=&#34;https://github.com/romiojoseph/blogspot/raw/refs/heads/main/blog/media/audios/audio.mp3&#34; type=&#34;audio/mpeg&#34;>
+    your browser does not support the audio element.
+</audio>
+```
+
+<audio controls>
+    <source src=&#34;https://github.com/romiojoseph/blogspot/raw/refs/heads/main/blog/media/audios/audio.mp3&#34; type=&#34;audio/mpeg&#34;>
+    your browser does not support the audio element.
+</audio>
+
+
+### 8. code snippet
+
+for code snippets, right-click, format and select the 'code' option. alternatively, surround the code with triple backticks for a block code format.
+
+*if it shows <mark>` `</mark> in the code block, just select the affected text, `shit + tab` and bring everything to the first column and then use `tab` to properly indent.*
+
+```css
+code {
+	font-family: var(--font-family-mono);
+	font-size: var(--font-size-body);
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	color: var(--obsidian-11);
+	line-height: 1.6;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+```
+### 9. embed
+you can easily embed bluesky posts, youtube videos, spotify songs and more. just grab the code from the respective posts/videos/songs and just paste it here.
+
+##### bluesky
+<blockquote class=&#34;bluesky-embed&#34; data-bluesky-uri=&#34;at://did:plc:ragtjsm2j2vknwkz3zp4oxrd/app.bsky.feed.post/3l6xwsu3f4t2t&#34; data-bluesky-cid=&#34;bafyreidkzf75rbvwqrnoc6gs76o7nwk73yqbdmn2awcvlwqxcnbhaoipve&#34; data-bluesky-embed-color-mode=&#34;system&#34;><p lang=&#34;en&#34;>this is how bluesky is decentralized. in the same way that you can switch search engines and see the same web, you can switch social apps and see the same atmosphere.
+
+it's because everybody's got their own site</p>— paul frazee (<a href=&#34;https://bsky.app/profile/did:plc:ragtjsm2j2vknwkz3zp4oxrd?ref_src=embed&#34;>@pfrazee.com</a>) <a href=&#34;https://bsky.app/profile/did:plc:ragtjsm2j2vknwkz3zp4oxrd/post/3l6xwsu3f4t2t?ref_src=embed&#34;>october 21, 2024 at 2:56 am</a></blockquote><script async src=&#34;https://embed.bsky.app/static/embed.js&#34; charset=&#34;utf-8&#34;></script>
+
+##### youtube
+to embed a youtube video use this iframe code snippet. you can grab the embed link source from youtube. and copy and replace that link only here (make sure it's an embed link - for eg; <mark>**https://www.youtube.com/embed/f_pinor8dcs**</mark>). so that the styles will be maintained.
+
+```
+<iframe 
+	class=&#34;youtube-embed&#34;
+    src=&#34;https://www.youtube.com/embed/f_pinor8dcs&#34; 
+    title=&#34;youtube video player&#34; 
+    frameborder=&#34;0&#34; 
+    allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; 
+    referrerpolicy=&#34;strict-origin-when-cross-origin&#34; 
+    allowfullscreen>
+</iframe>
+```
+
+<iframe 
+	class=&#34;youtube-embed&#34;
+    src=&#34;https://www.youtube.com/embed/f_pinor8dcs&#34; 
+    title=&#34;youtube video player&#34; 
+    frameborder=&#34;0&#34; 
+    allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; 
+    referrerpolicy=&#34;strict-origin-when-cross-origin&#34; 
+    allowfullscreen>
+</iframe>
+
+### 10. table
+to be frank, table formatting in markdowns is a little difficult. but we have obsidian, right? so just right click > insert > table.  
+
+you can create great tables easily and there is also sort option which means you can build the table easily first and manage it later with features like add, move, duplicate, delete, align and sort.
+##### less column table
+*data credits: perplexity*
+
+| technology                 | description                                            | creator                                     |
+| -------------------------- | ------------------------------------------------------ | ------------------------------------------- |
+| c (1972)                   | foundational general-purpose programming language      | dennis ritchie (bell labs)                  |
+| c++ (1985)                 | object-oriented extension of c                         | bjarne stroustrup (bell labs)               |
+| arpanet (1969)             | first operational packet-switching network             | u.s. department of defense                  |
+| tcp/ip (1983)              | internet protocol suite for reliable data transfer     | vint cerf, bob kahn                         |
+| html 1.0 (1993)            | standardized markup language for the web               | tim berners-lee (w3c)                       |
+| java (1995)                | platform-independent, object-oriented language         | james gosling (sun microsystems)            |
+| javascript (1995)          | language for client-side scripting in browsers         | brendan eich (netscape)                     |
+| ruby (1995)                | high-level, interpreted programming language           | yukihiro matsumoto                          |
+| css 1.0 (1996)             | styling language for html                              | håkon wium lie (w3c)                        |
+| xml 1.0 (1998)             | markup language for data storage and transport         | world wide web consortium (w3c)             |
+| rss 0.9 (1999)             | initial version of rss for web syndication             | ramanathan v. guha (netscape)               |
+| ajax (2005)                | asynchronous javascript and xml for dynamic web pages  | jesse james garrett (adaptive path)         |
+| atom 1.0 (2005)            | syndication format alternative to rss                  | internet engineering task force (ietf)      |
+| node.js (2009)             | javascript runtime for server-side programming         | ryan dahl                                   |
+| react (2013)               | javascript library for building user interfaces        | jordan walke (facebook)                     |
+| html5 (2014)               | fifth major revision of html                           | world wide web consortium (w3c)             |
+| kubernetes (2014)          | system for container orchestration                     | google                                      |
+| tensorflow (2015)          | open-source machine learning and deep learning library | google                                      |
+| ai (deep learning) (2010s) | advancements in deep learning and ai                   | developed by various organizations globally |
+
+##### a few column table
+*data credits: google*
+
+| movie           | year | genre    | director             | music                                | imdb                                  |
+| --------------- | ---- | -------- | -------------------- | ------------------------------------ | ------------------------------------- |
+| the godfather   | 1972 | drama    | francis ford coppola | nino rota                            | https://www.imdb.com/title/tt0068646  |
+| the dark knight | 2008 | action   | christopher nolan    | james newton howard and  hans zimmer | https://www.imdb.com/title/tt0468569/ |
+| the descendants | 2011 | drama    | alexander payne      | jeff peterson                        | https://www.imdb.com/title/tt1033575/ |
+| gravity         | 2013 | thriller | alfonso cuarón       | steven price                         | https://www.imdb.com/title/tt1454468/ |
+| interstellar    | 2014 | sci-fi   | christopher nolan    | hans zimmer                          | https://www.imdb.com/title/tt0816692/ |
+
+##### more than a few column table
+*data credits: meta ai*
+
+| tv show               | year | genre  | creator           | seasons | episodes | episode length | imdb   |
+| :-------------------- | :--- | :----- | :---------------- | :------ | :------- | :------------- | :----- |
+| friends               | 1994 | comedy | david crane       | 10      | 236      | 22 min         | 8.9/10 |
+| the office (us)       | 2005 | comedy | greg daniels      | 9       | 201      | 22 min         | 8.8/10 |
+| how i met your mother | 2005 | comedy | craig thomas      | 9       | 208      | 22 min         | 8.3/10 |
+| the big bang theory   | 2007 | comedy | chuck lorre       | 12      | 279      | 18-22 min      | 8.1/10 |
+| breaking bad          | 2008 | drama  | vince gilligan    | 5       | 62       | 45-60 min      | 9.5/10 |
+| modern family         | 2009 | comedy | christopher lloyd | 11      | 250      | 22 min         | 8.4/10 |
+| young sheldon         | 2017 | comedy | chuck lorre       | 6       | 127      | 18-22 min      | 7.8/10 |"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/supported-styles" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/blogspot/refs/heads/main/blog/media/images/support-styles-image.png" alt="Cover for ATProto Blog Supported Styles" class="card-image"> <div class="card-content"> <h2 class="card-title">ATProto Blog Supported Styles</h2> <p class="card-description">This documentation covers the supported Markdown styles and tags for this blog. Use this as a quick reference to format your content effectively.</p> <p class="card-meta"> <span>31 Oct, 2024</span> <span> Docs</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="run llms locally how can i run llms on a mid-range consumer laptop? *originally published on [substack on 25 jul 2024](https://romio.substack.com/p/how-to-run-llms-locally-ollama-lm-studio).*
+
+i remember trying out the [lm studio](https://lmstudio.ai/) a few months back, then due to the slow performance of my system, i decided to uninstall it and wait for the updates.
+
+then yesterday i saw the [llama 3.1](https://llama.meta.com/) update and mark’s blog about open-sourcing ai models. so i thought let’s explore again llms locally.
+
+i tried [text generation web ui](https://github.com/oobabooga/text-generation-webui?tab=readme-ov-file) first and tried to load the [openchat-3.5-0106-gptq](https://huggingface.co/thebloke/openchat-3.5-0106-gptq) from `thebloke`. and still, the generation is slow. but i know it is because of my hardware[1](https://romio.substack.com/p/how-to-run-llms-locally-ollama-lm-studio#footnote-1-146959932).
+
+anyway, so as a second attempt, i installed lm studio again to explore llms locally. that’s when i saw the compatibility status along with each model. it will tell whether the model will fully support my system, partially support it, or likely not support it. now, that gives me something to work with.
+
+also decided to install [ollama](https://github.com/ollama/ollama) - an open-source platform to run llm locally.
+
+so i searched for models that were most popular and matched my criteria. there are many available. so i spent some time in perplexity to learn what i should look for with my specifications.
+
+according to perplexity, my best options are quantized models[2](https://romio.substack.com/p/how-to-run-llms-locally-ollama-lm-studio#footnote-2-146959932). so i downloaded five models from hugging face and ollama library to try out.
+
+- [meta-llama-3.1-8b](https://huggingface.co/meta-llama/meta-llama-3.1-8b) from `meta-llama`
+- [gemma-2b-it-gguf](https://huggingface.co/lmstudio-ai/gemma-2b-it-gguf/blob/main/gemma-2b-it-q8_0.gguf) from `lmstudio-ai`
+- [phi-3 mini -3.82b](https://ollama.com/library/phi3:latest) from `microsoft`
+- [stablelm-2-1_6b](https://huggingface.co/stabilityai/stablelm-2-1_6b) from `stabilityai`
+- [qwen2-0.5b](https://ollama.com/library/qwen2:0.5b) from `qwen`
+
+so in simple terms, you need to understand your device specifications and look for modal cards that suit.
+
+both hugging face and ollama display model cards.
+
+model cards from hugging face and ollama
+
+## how to run llms locally using lm studio?
+
+it’s a straightforward process. because it’s all ui-based. anyone can figure it out if they spend a few minutes to understand the interface. you can see the size and compatibility status when you search for a model.
+
+install [https://lmstudio.ai](https://lmstudio.ai/)
+
+llms listing along with compatibility status.
+
+download the models you need and they will be downloaded to the default path
+
+`c:\users\computername\.cache\lm-studio\models`
+
+now go to the ai chat tab and load a model, adjust the settings (this is a bit tricky, you need to find the optimal performance settings by tweaking multiple times).
+
+when in doubt, there will be an information icon with every string, just hover it and read.
+
+i gave max gpu usage to gemma 2 from `lmstudio-ai` and it generated content at lightning speed. i played around a little and i think i can find an appropriate use case for it soon. also note that when running locally, the context size will be very low due to the low-end hardware system.
+
+## how to run llms locally using ollama?
+
+my first impression was a little bit tough. i didn't quite understand how to use this. because it’s just a terminal. so i had to spend some time to understand what everything is. so i’ll try to explain in the best simplest way possible (i’m a windows user, so the terms will be based on windows).
+
+- install ollama from the website [https://ollama.com](https://ollama.com/)
+- after installation open a terminal (command prompt or windows powershell)
+- it will display the general user root `c:\users\computername`
+- type `ollama` and hit enter. it will display a set of lists (just to familiarize)
+
+a list of ollama commands in the terminal
+
+- go to the [ollama model library](https://ollama.com/library) and find the appropriate and suitable model by understanding your device’s capability.
+- after finding one, just click on it and it will open the model screen.
+
+model card and command to pull and run an llm on ollama in the terminal.
+
+- now all you have to do is make sure the latest is selected and **click on that copy icon** along with the command to pull this model to your system, in this case, `ollama run phi3:latest`
+- back to the terminal, **paste the command, and hit enter**. it will start to download the model to your system (check your terminal for updates). you can find the path here `c:\users\computername\.ollama\models\blobs`
+- after a successful download, you will see a subtle colored command.  
+    `>>> send a message` (`/? for help`)
+- this means you’re now running that llm locally, you can ask anything and it will answer momentarily (if your system can hold the weight of the llm).
+
+even though it looks a little bit of a developer style, it is easy.
+#### to run it again;
+you can close this terminal anytime and whenever you need to run it again just open a terminal and run that command from the ollama model library or just type your llm name (`ollama run phi3:latest)`
+
+---
+
+if it feels a little complicated to navigate, there is another way. you can use it like chatgpt/gemini style.
+### how to run llms locally using [open webui](https://openwebui.com/)?
+
+- install [ollama](https://ollama.com/)
+- install [docker](https://www.docker.com/)
+- after successful installation of both, go to the [open webui’s github repository](https://github.com/open-webui/open-webui).
+- scroll down to documentation and find the command for your requirements. i choose to run “_to run open webui with nvidia gpu support_”.
+- copy and paste that command to the terminal and wait for the installation to finish.
+- after successful installation, open the `docker desktop` from the apps.
+- select the container tab and there will be one container configured.
+- the container is already running by now, so look at the table. there will be a column named “port”, click on the hyperlink. it will open `http://localhost:3000`
+- click on sign up and create a single account (everything is running locally, not online). this account is just for a user account purpose.
+- now you can see the [open web ui](https://docs.openwebui.com/assets/images/demo-d3952c8561c4808c1d447fc061c71174.gif) - familiar right?
+- just select a model and ask away.
+- do not forget to tweak the settings to your needs.
+- you can load multiple models and ask questions (but it depends on your system).
+- the ui has a lot of useful features. play around and find everything.
+- now when you finished, you can close the tab and quit the docker from the taskbar.
+- when you need to open it again, just open the `docker desktop` and click `http://localhost:3000`
+
+### how to load a gguf model downloaded from hugging face in ollama
+
+now you may have gguf models downloaded with lm studio, or direct from hugging face, right? you can load this in ollama.
+
+- save the gguf file in a dedicated folder. i have a gguf file `gemma-2b-it-q8_0.gguf` and i saved it in the path `e:\ai\lmstudio-ai\gemma-2b-it-gguf`
+- now create a note file in the same directory and type the following.  
+    `from e:\ai\lmstudio-ai\gemma-2b-it-gguf\gemma-2b-it-q8_0.gguf`
+- save the file as a text (file name must be `modelfile`)and remove the extension (press f2 and remove the `.txt`).
+- now you have two files in that directory, right? one is a gguf file and the other is a file without any extension and named modelfile.
+- while you’re in the folder where these files are stored, right-click and select `open in terminal.` this will open a terminal that is now ready to do things in this directory, nothing complicated.
+- now the final part, type `ollama create gemma-2b-it -f modelfile`
+- **just remember that** `gemma-2b-it` **in the above command is a name i gave,** you can change it to your model name. it will create a model and you can run it like usual. type and enter `ollama list` to see the available models. it will be available in the open webui too. just play around.
+
+i’m waiting for smaller models or ones that can be configured to our specific needs online and downloaded in smaller sizes. i believe future devices will focus on this, making the process easier.
+
+**please note:** running llms locally is a process of huge power consumption and the laptop will produce more heat than usual. so, for very simple things, use any cloud-based ai services. my current recommendations are claude and perplexity.
+
+i’m happy that all this is possible now and all we need is more optimization to run it smoothly and efficiently. there will be many use cases like talking to a computer in real-time and getting appropriate answers even when the internet is not available, handling with a company, or personally sensitive data, etc."> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/how-to-run-llms-locally-ollama-lm-studio" class="card"> <article class="blog-card"> <img src="https://substackcdn.com/image/fetch/$s_!4cxA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F17c969a9-bc21-4097-901b-b1b635991433_1920x1080.jpeg" alt="Cover for Run LLMs locally" class="card-image"> <div class="card-content"> <h2 class="card-title">Run LLMs locally</h2> <p class="card-description">How can I run LLMs on a mid-range consumer laptop?</p> <p class="card-meta"> <span>25 Jul, 2024</span> <span> Docs</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="free alternatives decentralize your tech stacks and join the open-source movement. `this blog will be updated as i find new things worth sharing.`
+
+i wrote about the [subscription fatigue](https://romio.substack.com/p/subscriptions-vs-one-time) a few months ago. looks like that trend is going steadily. everything is becoming super expensive.
+
+i'll list free alternatives for popular software in sections like note-taking, video editing, design, and other utilities.
+### why?
+
+i believe it's essential to join the open-source movement now, especially with big tech companies monopolizing various fields. otherwise, subscription prices will only continue to rise in the future.
+
+> companies like adobe, often bundle various apps into a single suite to lock users into long-term commitments. while these bundles may appear cheaper compared to individual app pricing, customers often end up paying for features they don't actually need or use. [and you know the difficulties in cancellation](https://www.theverge.com/2024/6/17/24180196/adobe-us-ftc-doj-sues-subscriptions-cancel), right?
+
+**please note** that these aren't exact replicas of the familiar software and may not offer the same feeling, but they will help you to escape from the big techs and their bundled subscriptions. once installed, go to the preferences/settings and adjust them to make them more comfortable.
+
+moving to ubuntu is a nice option to consider at this time. it might not be easy at first, but i believe it will become more user-friendly over time. [try installing ubuntu on your old laptop and experiment with it to give your device a new life](https://romio.substack.com/p/repurpose-old-laptop-with-ubuntu-or-chromeosflex)!
+
+---
+
+### alternative software
+
+`if you find it helpful, consider giving stars on github and supporting them with a donation if possible.`
+
+**[kde connect](https://kdeconnect.kde.org/):** this is my favorite finding so far. i stumbled on this while i was onboarded into ubuntu a few weeks back. share your files between devices and control your pc from your mobile.
+
+if you install kde connect on your windows, linux, or macos and android or ios, you can easily control many things, including your media player, clipboard, etc.
+
+youtube doesn't let you control the web player from your phone. kde connect makes it possible.
+
+it's free!
+[apps.kde.org/kdeconnect](https://apps.kde.org/kdeconnect/)
+
+**[penpot](https://penpot.app/):** so far, my next go-to platform for product design is penpot. even though i heavily depend on figma due to vendor lock, i occasionally give penpot a chance. i'm looking forward to their big achievements in the industry.
+
+---
+
+**[syncthing](https://syncthing.net/):** it synchronizes files between two or more devices in real-time. all you need is a privacy-focused cloud storage provider, to stay calm with both local and cloud backups of your data. you can use [synctrayzor](https://github.com/canton7/synctrayzor) for an enhanced interface.
+
+**[obsidian](https://obsidian.md/):** works offline. perfect for private note-taking. you can use syncthing and sync it with your trusted cloud partner for advanced backup. also, if you want, subscribe to the [publish plan](https://obsidian.md/publish) and use this as a blog.
+
+**[anytype](https://anytype.io/):** another [note-taking app for you](https://obsidian.md/publish) if you’re exploring platforms.  
+_check out [capacities](https://capacities.io/) too._
+
+**[krita](https://krita.org/en/):** an adobe photoshop replacement for sure. gimp is not user-friendly at the moment. many online platforms are also available, for eg; [photopea](https://www.photopea.com/)
+
+**[davinci resolve](https://www.blackmagicdesign.com/products/davinciresolve):** a perfect free video editor for anyone. tons of resources online. you can check out [kdenlive](https://kdenlive.org/en/) too.
+
+**[cavalry](https://cavalry.scenegroup.co/):** with the free tire, you can use this as a basic 2d animation software. you can check out [friction](https://friction.graphics/) too.
+
+**[audacity](https://www.audacityteam.org/):** for your audio recording and editing.
+
+**[blender](https://www.blender.org/):** this is one of the biggest open-source and free projects. try out everything.
+
+**[inkscape](https://inkscape.org/):** if you’re looking for a nice adobe illustrator alternative, this is the one you can try out. not perfect, but it just works.
+
+**[obs studio](https://obsproject.com/):** take screen capturing (screencasting and streaming app) into a professional mode.
+
+**[handbrake](https://handbrake.fr/):** convert your videos to the web-optimized and smallest size possible.
+
+**[qbittorrent](https://www.qbittorrent.org/):** most open-source apps seem to be distributed via torrent these days. so, go for this one, no bloatware or ads.
+
+**[7 zip](https://www.7-zip.org/):** you don’t need winrar, use this lightweight, free, open-source file archiver.
+
+**[libretube](https://github.com/libre-tube):** alternative to youtube front-end (android only).
+
+**[vlc media player](https://www.videolan.org/vlc/):** works with almost any media format.
+
+for office suite apps, use [libreoffice](https://www.libreoffice.org/) or [openoffice](https://www.openoffice.org/) (i’m not a fan of both of these because of the user interface issue, but these are the best available options so far).
+
+_**add on, but not a promotion:** you can check out &#34;[instances](https://instances.framer.website/),&#34; a curated library of software and platforms for various purposes (free &#38; paid). i constantly update it to make it relevant and useful._"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/free-alternatives-decentralize-tech-open-source" class="card"> <article class="blog-card"> <img src="https://substackcdn.com/image/fetch/$s_!Clvh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7470d0c7-6e8a-4013-b6c4-23b7d8d44e41_1360x768.jpeg" alt="Cover for Free alternatives" class="card-image"> <div class="card-content"> <h2 class="card-title">Free alternatives</h2> <p class="card-description">Decentralize your tech stacks and join the open-source movement.</p> <p class="card-meta"> <span>05 Jul, 2024</span> <span> Open sourced</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="repurpose your old laptop with ubuntu or chromeos flex instead of selling your old laptop for scrap or second-hand use, convert it into a lightweight system by installing either ubuntu or chromeos flex. *originally published on [substack on 09 may 2024](https://romio.substack.com/p/repurpose-old-laptop-with-ubuntu-or-chromeosflex).*
+### what should i do with my old laptop?
+we all face this question every four to five years right? don’t throw your old laptop in the recycle bin or back of your closet or sell your computer for scrap or second-hand use. instead, **convert it into a lightweight system by installing either ubuntu or chromeos flex.** you can use it for yourself or give it to your loved ones. the installation process is straightforward and user-friendly, so you don't need to be a tech expert.
+
+i had an old windows 10 laptop ([acer nitro 5](https://www.pcmag.com/reviews/acer-nitro-5-2018)). it became too lagging and it was a frustrating move to even deal with it. so, i kept it apart after buying [a new one](https://romio.substack.com/p/a-new-laptop).
+
+but one day, i had this thought why not give it a try with ubuntu or chromeos? because the laptop had no resale value at the moment. this is now best for trying anything. in my opinion, this approach is one of the best options for giving old laptops a second chance.
+
+### 1. install chromeos flex on an old laptop
+_check the minimum device requirements here: [https://support.google.com/chromeosflex/answer/11552529?hl=en](https://support.google.com/chromeosflex/answer/11552529?hl=en)_
+
+it is a very straightforward process. no complicated commands or anything is needed. just get a pen drive (8 gb or more) and you're good to go.
+
+> this is best for kids, nontech enthusiastic students or professionals, and elderly people. because of the simplicity of the ui, it's basically like using a big tablet. so adaptation is not an issue and is easily achievable within a few days. [watch this video](https://youtu.be/mv9jgcfvbm8).
+
+install chromeos flex on your old laptop.
+- install the [balenaetcher](https://etcher.balena.io/) tool or any other utility to create a bootable usb.
+- download the latest chromeos flex installer image from the chromeos flex installation guide link ([https://dl.google.com/chromeos-flex/images/latest.bin.zip](https://dl.google.com/chromeos-flex/images/latest.bin.zip)) and extract the file.
+- open the balenaetcher, select the image file, then the drive, and click flash. that's it.
+
+gif credits: [balenaetcher](https://etcher.balena.io/)
+
+- now pick up your old laptop insert the bootable usb and boot from the usb drive. if you don't know how to change the boot order, [refer to this perplexity page here](https://www.perplexity.ai/search/how-to-change-xjsasi0nrzk.l.refqjasa).
+- soon the installer window will appear. read the headings, and select the try or install option, that's it.
+
+you can install android-supported applications. please remember that, nowadays, most of the platforms are built in a progressive web application mode, so you can [install pwas](https://web.dev/articles/install-criteria) and use them as you use them on any other operating system.
+
+_for detailed steps (you don’t need it, but just in case), [consider visiting the official website here](https://support.google.com/chromeosflex/answer/11552529?hl=en)._
+
+### 2. install ubuntu on an old laptop
+
+_check the minimum device requirements here: [https://ubuntu.com/download/desktop#system-requirements](https://ubuntu.com/download/desktop#system-requirements)_
+
+before proceeding, i'm also a newbie in the linux universe. you can either learn by doing everything on your own or understand the terms early to make it more interesting. i jumped into the process and due to excitement, played around many unknown commands and ended up crashing the system several times. i reinstalled ubuntu more than ten times. it's more easy than installing a windows os.
+
+> it’s best for tech-enthusiastic people. or configure every essential thing and hand it over to other people. great for browsing the internet and doing office work.
+
+#### 2.1 understand the world of linux
+
+[linux is a family of open-source operating systems](https://www.linux.org/pages/download/). there are many distros(short for distribution) available for users depending on their needs, like desktop, server, core (iot and embedded systems), and cloud.
+
+#### 2.2 what is ubuntu
+
+[ubuntu](https://ubuntu.com/) is the most user-friendly distro out there and it is based on another well-established distro called [debian](https://www.debian.org/).
+
+it's by default bundled with the gnome[1](https://romio.substack.com/p/repurpose-old-laptop-with-ubuntu-or-chromeosflex#footnote-1-144394640) desktop environment (if you want, you can change it to the [kde plasma desktop](https://kde.org/plasma-desktop/) or any other). elevate the user experience by installing some extensions from [gnome shell extensions](https://extensions.gnome.org/). that’s the fun part.
+
+> a brief note on the difference between desktop environments (gnome, kde, etc.) [https://www.perplexity.ai/search/give-me-a-mikn9j1dthymxfrsxapala](https://www.perplexity.ai/search/give-me-a-mikn9j1dthymxfrsxapala)
+
+ubuntu is free and fully open source. it provides updates in two styles. one is **long term support release (lts)**, every two years in april. the other is **interim release**, every six months, in april and october. if you're into experimenting with everything as soon as possible, try the frequent one.
+
+explore further on ubuntu's website, you can see a lot of [different flavors of the ubuntu os](https://ubuntu.com/desktop/flavours), each with its own choice of default applications, interfaces, and settings.
+
+once installed, you'll have only the essential things, and you can customize it to feel like home. that's the beauty of linux distros!
+#### 2.3 installation process (max 10 mins)
+
+- download the preferred image (lts or interim) from the [ubuntu release page](https://releases.ubuntu.com/).
+- install the [balenaetcher](https://etcher.balena.io/) tool or any other utility to create a bootable usb.
+- open the balenaetcher, [select the image file, then the drive (16 gb or more), and click flash](https://etcher.balena.io/images/etcher_steps.gif). that's it.
+- insert the bootable usb and boot from the usb drive. if you don't know how to change the boot order, [refer to this perplexity page here](https://www.perplexity.ai/search/how-to-change-xjsasi0nrzk.l.refqjasa).
+- the installation process is straightforward and in simple ui. i’d say better than windows installation.
+- connect to the internet and download any additional drivers if prompted.
+- reboot.
+
+after restart you'll get the default look and feel of ubuntu. it's slightly into macos design style but a mix of windows too.
+
+#### 2.4 start customization
+
+you can use it as it is or go deep and make it super-friendly by installing a few extensions and tweaking some settings.
+
+there are several ways to install applications in ubuntu. you can choose between using the terminal for more control, app stores ([flathub](https://flathub.org/en), [snap store](https://snapcraft.io/store), etc), for ease of use, or individual package formats like
+
+- [deb](https://www.debian.org/doc/manuals/debian-faq/pkg-basics.en.html)  
+    `$ sudo apt install <package_name>.deb`
+- [snap](https://ubuntu.com/core/services/guide/snaps-intro)  
+    `$ sudo snap install <package_name>`
+- [appimage](https://appimage.org/) these are portable software. no need to install it. go to properties make the program executable and run. you might need an additional package called libfuse2. use the following command.  
+    `$ sudo apt install libfuse2`
+- [flatpak](https://flatpak.org/setup/ubuntu)  
+    `$ sudo apt install flatpak`
+
+```
+rpm: used in red hat-based distributions. installed with sudo dnf install <package_name>.rpm (or sudo yum install in older systems).
+```
+
+faq; [dollar ($) sign meaning in ubuntu](https://www.perplexity.ai/search/what-is-the-egbw_2varcg8fmtixdzjyg).
+
+**disclosure: i discovered all these commands by interacting with google gemini.**
+
+by going forward you will read &#34;`sudo`&#34; many times. sudo[2](https://romio.substack.com/p/repurpose-old-laptop-with-ubuntu-or-chromeosflex#footnote-2-144394640) stands for &#34;super user do&#34;.
+
+before installing anything, you need to run the below commands. it's recommended to run these commands regularly to keep your ubuntu system secure and functioning optimally.
+
+- `$ sudo apt update`  
+    fetches the latest software information.
+- `$ sudo apt upgrade`  
+    use that information to install updates for your existing software.
+
+##### 2.4.1 mount drives
+
+if the drives are not mounted by default try the below steps.
+
+- **identify the drive**[3](https://romio.substack.com/p/repurpose-old-laptop-with-ubuntu-or-chromeosflex#footnote-3-144394640) **in ubuntu:** run the following command to list block devices:  
+    `$ lsblk -f`
+- **verify mount status**[4](https://romio.substack.com/p/repurpose-old-laptop-with-ubuntu-or-chromeosflex#footnote-4-144394640)  
+    `$ df`
+
+sometimes there will be an error like &#34;unable to access location in ubuntu&#34;. to fix this;
+
+- **check the file system type**[5](https://romio.substack.com/p/repurpose-old-laptop-with-ubuntu-or-chromeosflex#footnote-5-144394640)  
+    `$ blkid /dev/sdx` (replace x with the device name)
+- **create a mount point (if it doesn't exist)**[6](https://romio.substack.com/p/repurpose-old-laptop-with-ubuntu-or-chromeosflex#footnote-6-144394640)  
+    `$ sudo mkdir /media/your_username/internalhdd`
+- **mount the drive  
+    **`$ sudo mount -t ntfs /dev/sdx /media/your_username/internalhdd`
+
+##### 2.4. 2 download chrome
+
+- open the terminal (ctrl+alt+t)
+- download the google chrome .deb file with the following command:  
+    `$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb`
+- install the downloaded file with the following command:  
+    `$ sudo dpkg -i google-chrome-stable_current_amd64.deb`
+
+##### 2.4.3 installing essentials
+
+- **gparted**; the gnome partition editor for creating, reorganizing, and deleting disk partitions.  
+    `$ sudo apt install gparted`
+- **gnome extension manager:** a tool for browsing, installing, and managing gnome shell extensions.  
+    `$ sudo apt install gnome-shell-extension-manager`
+- **gnome tweaks**: a tool that lets you customize the gnome desktop environment, including appearance, fonts, workspaces, and more.  
+    `$ sudo apt install gnome-tweaks`
+- **update [snap store](https://snapcraft.io/store)**: the app store for linux  
+    `$ sudo snap refresh snap-store`
+- **install [nano](https://www.nano-editor.org/) text editor:** a small editor on the terminal.  
+    `$ sudo apt install nano`
+- **set keyboard shortcuts** the [same as windows](https://support.microsoft.com/en-us/windows/windows-keyboard-shortcuts-3d444b08-3a00-abd6-67da-ecfc07e86b98)  
+    settings > keyboard > keyboard shortcuts
+- add **gesture extension** with [x11 gestures](https://extensions.gnome.org/extension/4033/x11-gestures/) (you need to install [touchegg](https://medium.com/@yash9439/how-to-enable-touchpad-gestures-in-ubuntu-22-04-c0ec460c423) too).
+- **software center issues:** if you’re facing issues with the ubuntu software, open a terminal and run  
+    `$ sudo apt clean`
+    `$ sudo apt update &#38;&#38; sudo apt upgrade`
+    `$ sudo apt autoremove gnome-software`
+    `$ sudo apt install gnome-software`
+##### 2.4.4 some useful extensions
+
+- [app menu is back](https://extensions.gnome.org/extension/6433/app-menu-is-back/): it will display the name of the active app.
+- [arc menu](https://extensions.gnome.org/extension/1228/arc-menu/): a windows experience, but better.
+- [blur my shell](https://extensions.gnome.org/extension/3193/blur-my-shell/): give the shell a feel of blur and a little noise.
+- [clipboard history](https://extensions.gnome.org/extension/4839/clipboard-history/): manage copied items.
+- [gsconnect](https://extensions.gnome.org/extension/1319/gsconnect/): download [kde connect](https://kdeconnect.kde.org/download.html) on your phone (or any other device) and easily send files, clipboard items, and manage the system, etc.
+- [net speed](https://extensions.gnome.org/extension/4478/net-speed/): it will show the current net speed on the panel.
+- [openweather refined](https://extensions.gnome.org/extension/6655/openweather/): to display the current weather.
+- [user themes](https://extensions.gnome.org/extension/19/user-themes/): load shell themes from the user directory.
+- [x11 gesture](https://extensions.gnome.org/extension/4033/x11-gestures/): three or four-finger swipe gesture. great for multitasking.
+
+you can further personalize your desktop with a variety of extensions that'll make it feel more like home. visit [https://extensions.gnome.org/](https://extensions.gnome.org/). once installed, go to the [“installed” tab](https://in.pinterest.com/pin/576179346095102858/) and click the settings icon to tweak.
+
+_in case you face any doubt or feeling stuck somewhere, just go to [https://gemini.google.com/](https://gemini.google.com/) and ask. it will guide you._
+
+here's a preview of my customized ubuntu setup, showcasing its adaptability and potential for personalization.
+
+### conclusion
+
+in my opinion, ubuntu and chromeos are the best lightweight operating systems for older computers. you can feel the improvement in speed and performance.
+
+> unlike windows and mac, these are not paywall protected. you can download and install it for free!
+
+based on [statcounter](https://gs.statcounter.com/os-market-share/desktop/worldwide) data from april 2024, the global desktop operating system market share shows windows dominating with 72.22%, followed by macos at 14.73%.
+
+undoubtedly, the pre-installation of windows on most new laptops has contributed to the dominance of windows in the market. **however, this practice also results in inflated prices for consumers**, as the cost of the windows license is often bundled into the overall price of the laptop.
+
+you may notice that ubuntu has less software support compared to windows, largely due to its smaller market share. however, **by adopting ubuntu and advocating for its wider adoption, we can increase its popularity and encourage software companies to develop more applications for this platform**.
+
+while the transition to ubuntu may require some initial adjustment, the benefits of cost savings, customization, security, and community support make it a compelling alternative to the pre-installed windows ecosystem.
+
+> open-source philosophy: by advocating for ubuntu, we are supporting the open-source movement, which promotes transparency, collaboration, and [freedom from vendor lock-in](https://romio.substack.com/p/open-design-tools-data-ownership-portability).
+
+---
+
+#### additional help about the mounting drive in ubuntu.
+
+you may encounter an issue where we have to run a command every time after a reboot because the mount information isn't being automatically loaded during startup. here are two ways to configure automatic mounting:
+
+```
+you need to change &#34;x&#34; in sdx and &#34;your_username&#34;
+```
+
+**method 1: using fstab**[7](https://romio.substack.com/p/repurpose-old-laptop-with-ubuntu-or-chromeosflex#footnote-7-144394640) (with caution)
+
+- open a terminal and run  
+    `$ sudo nano /etc/fstab`
+- at the end of the file, add a new line  
+    `$ /dev/sdx /media/your_username/internalhdd ntfs defaults 0 0`
+- press `ctrl+o` to save the changes. and press `ctrl+x` to exit the nano editor.
+
+**method 2: using a script and startup applications**
+
+- create a script: [open nano editor](https://help.ubuntu.com/community/nano) and create a file named `mount_hdd.sh` with the following content`   #!/bin/bash`
+    `sudo mount -t ntfs /dev/sdx /media/your_username/internalhdd`
+- make the script executable: [open the path where you saved the script in the terminal](https://pin.it/7dywgwinf) and run the following command  
+    `$ sudo chmod +x mount_hdd.sh`
+- **add the script to startup applications:** open “startup applications”, click &#34;add&#34;, give a name, and fill in the path including the file name. then submit.
+    
+
+_note; sometimes method 2 doesn’t work, so you have to double-click it on every start-up. i faced this issue too. so tried the first method and working fine now._"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/repurpose-old-laptop-with-ubuntu-or-chromeosflex" class="card"> <article class="blog-card"> <img src="https://substackcdn.com/image/fetch/$s_!kZlM!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6a9e728e-0fe8-460e-826e-c3c998c94a78_2560x1700.png" alt="Cover for Repurpose your old laptop with Ubuntu or ChromeOS Flex" class="card-image"> <div class="card-content"> <h2 class="card-title">Repurpose your old laptop with Ubuntu or ChromeOS Flex</h2> <p class="card-description">Instead of selling your old laptop for scrap or second-hand use, convert it into a lightweight system by installing either Ubuntu or ChromeOS Flex.</p> <p class="card-meta"> <span>09 May, 2024</span> <span> Docs</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="software data ownership and portability open file formats, an interoperable ecosystem, and self-hosting options ensure we have the power to manage our digital assets on our own terms. >i’ve been thinking about this for a long time. however, i had no clarity on how to address this concern. so, i started to save interesting takes on this subject. i found a few philosophies and some interesting thoughts.
+
+*this is a shorter version of the blog. originally published on [substack on 23 mar 2024](https://romio.substack.com/p/open-design-tools-data-ownership-portability).*
+
+### tldr;
+proprietary formats and cloud platforms limit our freedom. i advocate for open file formats and self-hosting to give users full control over their data.
+
+high commissions and restrictions in app marketplaces suffocate innovation. hoping for an open, interoperable ecosystem where creators can move their work freely without being locked into specific tools or platforms.
+
+### the issue
+i knew that something was bugging me with the software (design tools specifically) and its way of evolution. when i realized that i could publish a design with framer, it was like a totally different experience for me. [i went all into the platform](https://romio.substack.com/p/houston-we-have-a-lift-off), but after a point, i started to lose interest and temporarily stopped because i had this feeling that, i did not own that site or its code, even if i paid.
+
+i mean, i can see, create, and modify. but at the end of the day, i have nothing. everything is connected to an account. i’m not owning that creation. i can't export and migrate to somewhere else easily.
+
+that felt different, what if this platform (or any platform) stops its service tomorrow? or change their pricing? or [terminate](https://techcrunch.com/2024/03/06/apple-terminates-epic-games-developer-account-calling-it-a-threat-to-the-ios-ecosystem/) our account for some reason? or what if we found a better platform that we want to migrate? even if they're well-funded, these questions have been bugging me for a long time now. [recent experience is from skiff](https://romio.substack.com/p/skiff-is-joining-notion). i don't want to get stuck when a shutting down, transition or an acquisition happens.
+
+i think it is time to start rooting for open development.
+
+### cloud storage or peer-to-peer file synchronization?
+now come to the storage mode. i’ll clear one thing up first. i don't want to face data loss ever again. [the incident is mentioned in this blog.](https://romio.substack.com/p/its-here)
+
+storing data on the cloud raises valid concerns about privacy, security, and service reliability. addressing these issues is crucial.
+
+there will be privacy-invasive trackers in the platform’s own cloud storage system. constantly monitoring a file! if a file is in an open format, third-party storage providers might train ai in this file and its data. [remember the fuss over dropbox’s default ai toggle](https://www.theregister.com/2023/12/15/dropbox_ai_training/)? i’m not saying this is the case, but it is a chance.
+
+service providers shouldn't learn from our work, without consent. we pay for tools and support, so data control should remain with us by default. users deserve the freedom to choose how their information is handled, maintaining privacy and ownership.
+
+i only used obsidian on a single device in the beginning. but when i needed multi-device syncing, i looked at their pricing, but it was more than i could afford and there was no country-based pricing.
+
+so i looked for alternative methods. that’s when i heard about [synthing](https://syncthing.net/).
+
+> **“syncthing is a continuous file synchronization program.** it synchronizes files between two or more computers in real-time, safely protected from prying eyes. your data is your data alone and you deserve to choose where it is stored, whether it is shared with some third party, and how it’s transmitted over the internet.”
+
+synthing is open source. [all source code is available on github.](https://github.com/syncthing/) starred by almost 58.8k people as of mar 22, 2024.
+
+### interesting, right?
+our work files and ideas belong to us and we deserve complete privacy. that's why our data should be stored on our preferred services, inaccessible to the tool provider.
+
+### marketplace lock
+now this is another serious concern rising in these times. as companies try to make more profit each quarter, they tend to lock something up and introduce new methods. slowly some of them will become a monopoly.
+
+marketplace commission makes all apps and digital goods more expensive. it goes on top of the price we pay to developers. we pay more for every app/plugin/add-on, even though we already bought a phone, a system, or even an app. in short, we keep paying even after we have paid.
+
+- big tech takes a 20-30% cut of the app store money earned by most independent makers. the cut makes many potentially profitable apps unsustainable, reducing app innovation. billions in developer revenue taken away that could have improved app quality.
+- [there might be other policies that will block an app’s growth.](https://www.hey.com/apple/)
+- a monopoly abuses its market dominance at the expense of millions of users who are trying to monetize their own content.
+- [ability to disable paid content monetization efforts on their platforms if creators don't pay the 20-30% commission.](https://t.me/rove/199)
+- apps can’t function outside of big tech's guidelines.
+- [obscure and lengthy &#34;review processes&#34; that delay getting new app versions distributed, creating a closed nature.](https://t.me/rove/190)
+- developers must support both ios and android to be socially relevant, and can't avoid the duopoly (a well-polished pwa is the solution here).
+- meanwhile android allows sideloading and competing app stores, unlike ios.
+- some apps might not be available due to censorship, and other country-based restrictions.
+- we need to have an account to use a marketplace and every action is tied to this creating a lack of privacy and making us an easier target to track and show ads.
+- i acknowledge that the commission allows marketplaces to maintain the store, but ~30 is too much, don't you think?
+
+from a creator and developer point of view, marketplace lock is a burden.
+
+yes, i understand that it provides safety and security. i also understand that regular users may be attacked by scammers and fraudsters if there is no middleman to regulate, however, there shouldn't be a monopoly that decides how things run and it's essential to find a middle ground that allows for a secure and open app ecosystem.
+
+### the ideal app distribution
+with windows, we can download apps from any website, choose whether to create an account or not, and opt for premium features if needed. this flexibility gives us control over our app experience.
+
+before the world switched from desktop to mobile, app developers already had many thousands of users and paid zero commission to desktop os creators.
+
+now for another example, i like telegram's and obsidian’s way of app distribution from their own site. it just works seamlessly and no delay in anything.
+
+i wish more trustworthy platforms chose this way to distribute their apps.
+
+expanding obsidian's concept to pdf, epub, doc, etc formats would transform the way we interact with a document. we don't have to worry about any shutdown news or an out-of-the-sense subscription price hike.
+
+### conclusion
+the software helps us to turn our ideas into reality. essentially, they're tools that make achieving our goals and expressing our creativity easier and more accessible. so we shouldn't be locked into some proprietary format.
+
+i’m familiar with the quote “a bad workman blames his tools”. but i’m not blaming tools here, i just want to clarify that.
+
+what i’m saying is that **digital tools should be open, highly customizable, and extensible**. the whole point of being familiar with tools is to shape them to our unique needs, right?
+
+**it's time to ditch proprietary formats and cloud platforms that hold our work hostage. build an open, interoperable ecosystem where our ideas can flow freely between tools and platforms, ensuring longevity and portability.**
+
+i also believe this should be a collective movement."> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/open-design-tools-data-ownership-portability" class="card"> <article class="blog-card"> <img src="https://substackcdn.com/image/fetch/$s_!u7pI!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F05dc3e8a-7970-4cd4-8a6b-b341121e36ab_1360x768.jpeg" alt="Cover for Software Data Ownership and Portability" class="card-image"> <div class="card-content"> <h2 class="card-title">Software Data Ownership and Portability</h2> <p class="card-description">Open file formats, an interoperable ecosystem, and self-hosting options ensure we have the power to manage our digital assets on our own terms.</p> <p class="card-meta"> <span>23 Mar, 2024</span> <span> Spotlight</span> </p> </div> </article> </a> </div> </div> <p id="no-results-message" style="display: none;">
+No posts found matching your search.
+</p> <script type="module">const e=document.getElementById("search-input"),c=document.querySelectorAll(".search-card-wrapper"),o=document.getElementById("no-results-message");function a(){if(!e)return;const l=e.value.toLowerCase();let s=0;c.forEach(t=>{const n=t.dataset.searchableContent;n&&n.includes(l)?(t.style.display="block",s++):t.style.display="none"}),o&&(o.style.display=s===0?"block":"none")}e&&e.addEventListener("input",a);</script>  </main> <footer class="main-footer"> <div class="footer-left"> <span>&copy; 2025 Romio Joseph.</span> <div class="footer-time-wrapper"> <span>
+Based in Alleppey, Kerala, IN (GMT +5:30)
+<span id="live-time"></span> </span> <!-- The Popover Content --> <div class="footer-popover"> <img src="/assets/cover-images/alpy.avif" alt="Alleppey Light House Image - From Google" class="popover-image"> <h6>Alleppey, Kerala, IN</h6> <aside>
+A city on the Laccadive Sea in the southern Indian state of
+                    Kerala.
+</aside> </div> </div> </div> <div class="footer-right"> <span>All rights reserved.</span> <a href="/terms-disclaimer-policies">Terms, Policies & Disclaimer</a> </div> </footer> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const t=document.getElementById("live-time");if(!t)return;function e(){const n=new Date().toLocaleTimeString("en-US",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",hour12:!0});t.textContent=n}setInterval(e,1e3),e()});</script> <script type="module" src="/_astro/BlogLayout.astro_astro_type_script_index_1_lang.DyH8HZto.js"></script> </body> </html>

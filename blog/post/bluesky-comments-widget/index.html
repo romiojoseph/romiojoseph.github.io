@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Standard SEO --><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Bluesky Comments Widget: Add replies to your site - Romio Joseph</title><meta name="description" content="Share your page link on Bluesky, then use this widget to show replies as comments on your site. No login or authentication needed."><link rel="canonical" href="https://romiojoseph.github.io/blog/post/bluesky-comments-widget/"><!-- Favicon --><link rel="icon" type="image/svg+xml" href="/favicon.svg"><!-- Open Graph (Facebook, X, LinkedIn, etc.) --><meta property="og:title" content="Bluesky Comments Widget: Add replies to your site - Romio Joseph"><meta property="og:description" content="Share your page link on Bluesky, then use this widget to show replies as comments on your site. No login or authentication needed."><meta property="og:url" content="https://romiojoseph.github.io/blog/post/bluesky-comments-widget/"><meta property="og:image" content="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/bluesky-comments-widget/assets/social-image.png"><meta property="og:site_name" content="Romio Joseph"><meta property="og:type" content="website"><!-- Twitter Card Fallback (ensures large image card) --><meta name="twitter:card" content="summary_large_image"><!-- ADDED: Google Fonts Links --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet"><script type="module">document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".slider-container").forEach(t=>{const e=t.querySelector(".slider-track"),o=t.querySelector(".slider-btn.prev"),s=t.querySelector(".slider-btn.next"),d=e.querySelectorAll(".card");if(!e||!o||!s||d.length===0)return;t.classList.add("js-enabled");let r=0;const c=d[0].offsetWidth+parseInt(getComputedStyle(e).gap),n=()=>{o.disabled=r===0,s.disabled=(r+1)*c>=e.scrollWidth-e.clientWidth};s.addEventListener("click",()=>{r++,e.scrollBy({left:c,behavior:"smooth"}),setTimeout(n,500)}),o.addEventListener("click",()=>{r--,e.scrollBy({left:-c,behavior:"smooth"}),setTimeout(n,500)}),e.addEventListener("scroll",n),n()})});</script><link rel="stylesheet" href="/_astro/archive.B0Qb6qdB.css">
+<link rel="stylesheet" href="/_astro/archive.CmHFBiHz.css">
+<link rel="stylesheet" href="/_astro/_slug_.BBp0g_XA.css"></head> <body class="is-blog-page"> <header class="main-header"> <div class="header-center"> <div class="header-nav left"> <a class="search-icon-link" aria-label="Bluesky Projects" href="https://romiojoseph.github.io/bluesky/" target="_blank" rel="noopener"><i class="ph-duotone ph-circles-three-plus"></i> </a> </div> <a href="/" class="header-logo"> <img src="/assets/svg/name.svg" alt="Romio Joseph"></a> <div class="header-nav right"> <a href="/blog/search" class="search-icon-link" aria-label="Search"> <i class="ph-duotone ph-magnifying-glass"></i> </a> </div> </div> <div class="header-nav"> <a href="/about">About</a> <a href="/data-portability">Data & Portability</a> <a href="/blog">Blog</a> <a href="/blog/featured">Featured</a> <a href="/blog/archive">Archive</a> </div> </header> <nav class="category-nav"> <a href="/blog/category/bluesky">Bluesky</a><a href="/blog/category/docs">Docs</a><a href="/blog/category/open-sourced">Open sourced</a><a href="/blog/category/spotlight">Spotlight</a> </nav> <main>   <article> <h1 class="post-title">Bluesky Comments Widget: Add replies to your site</h1> <p class="post-description">Share your page link on Bluesky, then use this widget to show replies as comments on your site. No login or authentication needed.</p> <p class="post-meta"> <span>Published on 14 Apr, 2025</span> <span>Updated on 15 Apr, 2025</span> <span>
+in  <a href="/blog/category/bluesky"> Bluesky </a> </span> </p> <img class="post-social-card" src="https://raw.githubusercontent.com/romiojoseph/bluesky/refs/heads/main/bluesky-comments-widget/assets/social-image.png" alt="Cover for Bluesky Comments Widget: Add replies to your site"> <div class="markdown-body post-content"><p>Integrate replies to a specific Bluesky post directly into your website or blog articles. This widget fetches the comment thread for a given post and displays it, allowing readers to see the conversation happening on Bluesky without leaving your site.</p>
+<button onclick="window.open('https://romiojoseph.github.io/bluesky/bluesky-comments-widget/', '_blank', 'noopener');">
+    Live Demo
+</button>
+
+<h4>Features</h4>
+<ul>
+<li><strong>Embed Bluesky Replies:</strong> Show the discussion from a Bluesky post thread with correct visual nesting.</li>
+<li><strong>Parent Post Stats:</strong> Displays likes, reposts, replies, and quotes for the original post (hides stats with zero count), linked to Bluesky where applicable.</li>
+<li><strong>No Authentication Required:</strong> Uses the public Bluesky API.</li>
+<li><strong>Simple Integration:</strong> Add a <code>div</code> and a small JavaScript snippet to your HTML.</li>
+<li><strong>Controls:</strong> Includes options to sort and search comments.</li>
+<li><strong>Clickable Comments:</strong> Entire comment bodies link back to the original reply post on Bluesky.</li>
+<li><strong>Customizable:</strong> Don&#39;t like the design? Style the widget using <code>bluesky-comments.css</code>.</li>
+<li><strong>Dependency:</strong> Uses <a href="https://phosphoricons.com/">Phosphor Icons</a> (linked via CDN).</li>
+</ul>
+<h4>How to Use</h4>
+<ol>
+<li><strong>Get the Files:</strong> Download <code>bluesky-comments.js</code> and <code>bluesky-comments.css</code>. Place them in your website&#39;s project folder (e.g., <code>js/</code> and <code>css/</code>).</li>
+</ol>
+<button class="btn-primary" onclick="window.open('https://github.com/romiojoseph/bluesky/tree/main/bluesky-comments-widget/', '_blank', 'noopener');">
+	Download
+</button>
+
+<ol start="2">
+<li><strong>Link Files in HTML:</strong>
+In the <code>&lt;head&gt;</code> of your HTML, link the CSS files. <strong>Load <code>bluesky-comments.css</code> AFTER any general stylesheets (like <code>style.css</code>) if you encounter styling conflicts.</strong></li>
+</ol>
+<pre><code>&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/your/css/style.css&quot;&gt; &lt;!-- Your general styles --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/your/css/bluesky-comments.css&quot;&gt; &lt;!-- Widget styles --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css&quot; /&gt;
+&lt;/head&gt;
+</code></pre>
+<p>Before the closing <code>&lt;/body&gt;</code> tag, link the JavaScript file:</p>
+<pre><code>&lt;body&gt;
+    &lt;script src=&quot;path/to/your/js/bluesky-comments.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- Initialization script below --&gt;
+&lt;/body&gt;
+</code></pre>
+<p><em>(Update <code>path/to/your/css/</code> and <code>path/to/your/js/</code>)</em></p>
+<ol start="3">
+<li><strong>Add the Container:</strong> Place this empty <code>div</code> in your HTML where the comments should appear. Give it a unique ID.</li>
+</ol>
+<pre><code>&lt;div id=&quot;my-bluesky-comments&quot;&gt;
+    &lt;p&gt;&lt;i&gt;Loading Bluesky comments...&lt;/i&gt;&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<ol start="4">
+<li><strong>Initialize the Widget:</strong> Add the following <code>&lt;script&gt;</code> block after including <code>bluesky-comments.js</code> (usually just before <code>&lt;/body&gt;</code>). <em>Update <code>targetContainerId</code> and <code>blueskyPostUri</code> below.</em></li>
+</ol>
+<pre><code>&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const targetContainerId = &#39;my-bluesky-comments&#39;;
+        const blueskyPostUri = &#39;at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3lktlkvn2lc2k&#39;; // &lt;&lt;&lt;--- CHANGE THIS URI
+        if (typeof loadAndRenderComments === &#39;function&#39;) {
+            loadAndRenderComments(targetContainerId, blueskyPostUri);
+        } else {
+            console.error(&quot;Error: loadAndRenderComments function not found.&quot;);
+            const container = document.getElementById(targetContainerId);
+            if (container) {
+                container.innerHTML = &#39;&lt;p class=&quot;bsky-comments-error&quot;&gt;Error: Could not load comments component.&lt;/p&gt;&#39;;
+            }
+        }
+    });
+&lt;/script&gt;
+</code></pre>
+<h4>Customization</h4>
+<ul>
+<li><strong>Styling:</strong> Modify <code>bluesky-comments.css</code> (CSS variables are available at the top).</li>
+<li><strong>Behavior:</strong> Adjust constants like <code>BSKY_MAX_INITIAL_COMMENTS</code>, <code>BSKY_COMMENTS_INCREMENT</code>, or <code>BSKY_INDENT_SIZE_PX</code> in <code>bluesky-comments.js</code>.</li>
+</ul>
+<h4>Dependencies</h4>
+<ul>
+<li><a href="https://phosphoricons.com/">Phosphor Icons</a> (via CDN)</li>
+</ul>
+<h4>Sample HTML Template</h4>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Bluesky Comments Widget Example&lt;/title&gt;
+
+    &lt;!-- Link to the widget&#39;s CSS file (in the same directory) --&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;bluesky-comments.css&quot;&gt;
+
+    &lt;!-- Link to Google Fonts (optional, but used by the CSS) --&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+    &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+    &lt;link
+        href=&quot;https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap&quot;
+        rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- Link to Phosphor Icons CSS (required for icons) --&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://unpkg.com/@phosphor-icons/web@2.1.1/src/duotone/style.css&quot; /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;widget-wrapper&quot;&gt;
+        &lt;div id=&quot;bluesky-comment-widget&quot;&gt;
+            &lt;!-- Initial placeholder message --&gt;
+            &lt;p&gt;&lt;i&gt;Loading Bluesky comments...&lt;/i&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Include the widget&#39;s JavaScript file (in the same directory) --&gt;
+    &lt;!-- IMPORTANT: Load this script AFTER the container div --&gt;
+    &lt;script src=&quot;bluesky-comments.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- Initialize the script --&gt;
+    &lt;script&gt;
+        document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+            // --- Configuration ---
+            // 1. ID of the container div above. MUST match.
+            const targetContainerId = &#39;bluesky-comment-widget&#39;;
+
+            // 2. AT URI of the Bluesky post to display replies from.
+            //    Find via post options (...) &gt; Copy link to post &gt; extract &#39;at://...&#39; part.
+            const blueskyPostUri = &#39;at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3lktlkvn2lc2k&#39;;
+            // 3. Load the comments.
+            if (typeof loadAndRenderComments === &#39;function&#39;) {
+                loadAndRenderComments(targetContainerId, blueskyPostUri);
+            } else {
+                console.error(&quot;Error: loadAndRenderComments function not found. Ensure bluesky-comments.js is loaded correctly and before this script block.&quot;);
+                const container = document.getElementById(targetContainerId);
+                if (container) {
+                    container.innerHTML = &#39;&lt;p class=&quot;bsky-comments-error&quot; style=&quot;padding:1em; text-align:center;&quot;&gt;Error: Could not load comments component JavaScript.&lt;/p&gt;&#39;;
+                }
+            }
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<hr>
+<p><em>I&#39;m not a coder. I use LLMs like Claude, Mistral, Meta AI, ChatGPT, and Gemini to create things that fit what I need. I share them so others can use them too. The code may not follow standard rules, so if you&#39;re a developer and see ways to make it better, I&#39;d really appreciate your help.</em></p>
+</div> <div class="tags-container"> <a href="https://bsky.app/search?q=add%20bluesky%20comments%20to%20your%20website%20or%20blog" class="tag-badge" target="_blank" rel="noopener"> add bluesky comments to your website or blog </a><a href="https://bsky.app/search?q=integrate%20bluesky%20with%20your%20blogs" class="tag-badge" target="_blank" rel="noopener"> integrate bluesky with your blogs </a><a href="https://bsky.app/search?q=bluesky%20comments%20widget" class="tag-badge" target="_blank" rel="noopener"> bluesky comments widget </a> </div> <section class="comments-section"> <div class="comments-header"> <h2>Comments</h2> <a href="https://bsky.app/profile/did:plc:z72i7hdynmk6r22z27h6tvur/post/3lktlkvn2lc2k" target="_blank" rel="noopener noreferrer" class="join-conversation-btn">
+Join the Conversation
+</a> </div> <div id="comments-container" data-post-uri="at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.post/3lktlkvn2lc2k"> <p>Loading comments...</p> </div> </section> </article> <script type="module" src="/_astro/_slug_.astro_astro_type_script_index_0_lang.BYGo_fkC.js"></script>  </main> <footer class="main-footer"> <div class="footer-left"> <span>&copy; 2025 Romio Joseph.</span> <div class="footer-time-wrapper"> <span>
+Based in Alleppey, Kerala, IN (GMT +5:30)
+<span id="live-time"></span> </span> <!-- The Popover Content --> <div class="footer-popover"> <img src="/assets/cover-images/alpy.avif" alt="Alleppey Light House Image - From Google" class="popover-image"> <h6>Alleppey, Kerala, IN</h6> <aside>
+A city on the Laccadive Sea in the southern Indian state of
+                    Kerala.
+</aside> </div> </div> </div> <div class="footer-right"> <span>All rights reserved.</span> <a href="/terms-disclaimer-policies">Terms, Policies & Disclaimer</a> </div> </footer> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const t=document.getElementById("live-time");if(!t)return;function e(){const n=new Date().toLocaleTimeString("en-US",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit",hour12:!0});t.textContent=n}setInterval(e,1e3),e()});</script> <script type="module" src="/_astro/BlogLayout.astro_astro_type_script_index_1_lang.DyH8HZto.js"></script> </body> </html>
