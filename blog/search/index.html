@@ -906,7 +906,103 @@ you can create great tables easily and there is also sort option which means you
 | the big bang theory   | 2007 | comedy | chuck lorre       | 12      | 279      | 18-22 min      | 8.1/10 |
 | breaking bad          | 2008 | drama  | vince gilligan    | 5       | 62       | 45-60 min      | 9.5/10 |
 | modern family         | 2009 | comedy | christopher lloyd | 11      | 250      | 22 min         | 8.4/10 |
-| young sheldon         | 2017 | comedy | chuck lorre       | 6       | 127      | 18-22 min      | 7.8/10 |"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/supported-styles" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/blogspot/refs/heads/main/blog/media/images/support-styles-image.png" alt="Cover for ATProto Blog Supported Styles" class="card-image"> <div class="card-content"> <h2 class="card-title">ATProto Blog Supported Styles</h2> <p class="card-description">This documentation covers the supported Markdown styles and tags for this blog. Use this as a quick reference to format your content effectively.</p> <p class="card-meta"> <span>31 Oct, 2024</span> <span> Docs</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="run llms locally how can i run llms on a mid-range consumer laptop? *originally published on [substack on 25 jul 2024](https://romio.substack.com/p/how-to-run-llms-locally-ollama-lm-studio).*
+| young sheldon         | 2017 | comedy | chuck lorre       | 6       | 127      | 18-22 min      | 7.8/10 |"> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/supported-styles" class="card"> <article class="blog-card"> <img src="https://raw.githubusercontent.com/romiojoseph/blogspot/refs/heads/main/blog/media/images/support-styles-image.png" alt="Cover for ATProto Blog Supported Styles" class="card-image"> <div class="card-content"> <h2 class="card-title">ATProto Blog Supported Styles</h2> <p class="card-description">This documentation covers the supported Markdown styles and tags for this blog. Use this as a quick reference to format your content effectively.</p> <p class="card-meta"> <span>31 Oct, 2024</span> <span> Docs</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="10,000 hours even projects that seem to go nowhere contribute to progress through exploration. it's about messing around and seeing what happens. this blog reflects my past few months. i'm not a developer, but after everything i've explored so far, i can confidently say that the gap between designers and developers is closing fast. it's only a matter of time now.
+
+now, the concept of 10,000 hours, which andrej karpathy references in his talk, suggests that even projects that seem to go nowhere contribute to progress through exploration. watch this video of [his talk where he discusses](https://www.youtube.com/watch?v=tsteekzo9xc&#38;t=961s) the snowball effect related to the idea of investing 10,000 hours.
+### opening
+
+i was really afraid to use a [terminal](https://en.wikipedia.org/wiki/windows_terminal). maybe it was due to the fear of bricking my pc. i didn’t know much about it, and i doubted everything when a terminal opened, executed something, and closed itself in just a second while installing software. in my mind, it's like malware trying to install itself. but all that changed when one day i decided to go all into ubuntu.
+
+[repurpose your old laptop with ubuntu or chromeos flex](https://romio.substack.com/p/repurpose-old-laptop-with-ubuntu-or-chromeosflex)
+
+trying out ubuntu was the best decision i made in my current journey. i knew nothing about it. all i had were access to llms and my ability to describe my requirements or the problems i was facing.
+
+#### initial development
+
+while setting up ubuntu again after bricking it for the nth time, i ran into a problem where the internal storage wouldn’t be detected. i got a solution from an llm. i needed to run the script below after booting or set it as a startup app to streamline the process.
+
+```
+#!/bin/bash
+sudo mount -t ntfs /dev/sdb1 /media/user/internalhdd
+```
+
+this was my stepping stone into the world of terminal commands!
+
+i think that’s when i started to see the real potential of interacting with llms to troubleshoot problems. so, i began to explore and [share my thoughts on bluesky](https://bsky.app/profile/romio.substack.com/feed/aaaomgpqdm7kg).
+
+since this was my first time, i had no clue whether some paths might lead to a dead end. my choice was simple - mess around and see what happens. this approach led to many things, including finding [what i truly care about](https://romio.substack.com/p/free-alternatives-decentralize-tech-open-source) and how to [run llms locally](https://romio.substack.com/p/how-to-run-llms-locally-ollama-lm-studio).
+
+every decision i took led to one another, sometimes it ended up in frustration, and other times it got exciting and i forgot even to sleep. and on some rare occasions, some days felt like what am i doing with all these?!
+
+#### transition
+
+my decision to run llms locally opened the door to [scripts](https://brave.com/glossary/script/), especially batch scripts (.bat) since my primary operating system is still windows. i plan to fully switch to linux with my next laptop purchase, so the money that would normally go to microsoft can be spent on a better gpu.
+
+anyway, one day i started creating scripts entirely with the help of llms. llms make creating them easy, even for non-coders like me. it was anthropic’s [claude artifacts](https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them) that sparked the idea for me to get started.
+
+some workflows don't need to be complicated. scripts automate repetitive tasks, saving time and effort. my primary goal was to meet my personal needs. then i began to think, even though i’ve been in the tech field for a long time, i only recently started using scripts. i decided to make the most of its potential. so, i thought why not share everything as open source and provide a readme for each script, making it easy for beginners to use without any hassle?
+
+#### early middlegame
+
+i started to share these resources as open with an mit license. my intention is straightforward. i just want to make the process simpler. i've also included in each readme the platform i used to create that resource.
+
+- scripts for basic chess analysis, including an extension and web front end for combined game statistics.
+- several image handling scripts.
+- telegram bots, including one for fetching rss feeds and an extension + frontend for working with telegram's bot api.
+- productivity tools:
+    - automated file organizer.
+    - duplicate file/folder finder.
+    - encrypt/decrypt tool.
+    - file/folder naming script.
+    - hash value checker.
+    - text case converter: a simple idea i always wanted to build but never knew where to start. through experimenting with llms, i turned it into a batch script, python script, telegram bot, chrome extension, and a frontend tool.
+- numerous other small and simple scripts.
+
+[open source philosophy](https://tom.preston-werner.com/2011/11/22/open-source-everything.html) is something we need right now. i’ve always been a fan of open-source projects, but we need more of them today more than ever - to reduce the costs of running software, obviously, and because the collective trust of developer communities brings more security, innovation, and collaboration.
+
+surprisingly, right now, in the ai field, zuckerberg is the one leading that journey with his llama models. i never thought in my wildest imagination that one day i’d endorse his approach.
+
+### middle game
+
+during my exploration with batch scripts, llms started suggesting python and javascript. i’ve tried many times to learn the basics of frontend development, but for some reason, the gap always felt too big. maybe it's because of my experience with no-code tools like framer. still, as my requirements grew more complex, i eventually decided to try everything.
+
+i am a non-coder who uses llms (claude, mistral, meta ai, chatgpt, and gemini) to generate resources tailored to my needs. i decided to make full use of all the llms available for free right now. the more i use them, the better i get at spotting when a chatbot starts hallucinating, which helps me steer the conversation to get more useful results. sometimes, in the middle of troubleshooting something, it derails everything.
+
+#### crisis
+
+llms derailing a conversation is one of the biggest challenges. at some point, either we hit the context limit and it starts drifting from the main topic, or it decides to end the conversation altogether. this can be frustrating, especially when you're excited and fully invested in building something. some projects involve a lot of lines of code, which makes it harder to stay within the context limits, restricting both input and output.
+
+with the launch of chatgpt about two years ago, a lot changed. many other llms entered the market, and the competition is tight now. the ai experience is completely different today. i’ve figured out which llm to use based on my unique needs, and if one derails, i know which one to switch to next.
+
+[view post on aug 30, 2024](https://bsky.app/profile/romiojoseph.github.io/post/3l2vs33yx6n2g)
+
+each platform has its pros and cons. one of the most annoying issues is that everything happens in a single thread. i wish i could create branches within the chat. [i discussed this more in a blog back in march](https://romio.substack.com/p/ai-interactions-beyond-simple-chat-models).
+
+in most cases, it’s not a one-time chat to generate a working solution. you need to spend time troubleshooting. in rare cases, if you're lucky, you might get the desired output after just a few back-and-forth exchanges. but that’s not typical. we need patience, and when frustration builds after multiple attempts, it’s best that we have to give ourselves a break and maybe approach it with a fresh mind.
+
+[view post on sep 21, 2024](https://bsky.app/profile/romiojoseph.github.io/post/3l4nma3n6cd2s)
+
+and with coding (html/css), i feel like there’s a lot to fill. maybe i feel this way because of my experience with framer. the editor should be a tool that writes code visually. for someone new like me, it’s hard to know all the declarations, their use cases, and limitations. but with visual tools, you can just toggle features on and off to see how things work. yes, tools like webflow exist, but i’m not interested in that because [platforms like these lock you into their ecosystem](https://romio.substack.com/p/open-design-tools-data-ownership-portability). i’m looking for something that can happen directly in vs code, without vendor lock-in. and yes, there are tools like cursor, that solve the problem of switching tabs. but i’m still waiting for that visual development inside the code editor.
+
+**fun fact:** reading development documentation helps 80% of the time. yet, many of us rush in too quickly, which has become a fun fact and meme in the developer community.
+
+#### maneuvering
+
+during these explorations, one day i decided to try out public apis, which sparked a chain of ideas. i ended up building a few projects. for example, i chose to work with the space category and used nasa's api to experiment with different possibilities. eventually, that project became [an automated telegram channel for daily nasa images](https://t.me/daily_astronomy_pictures). a bot deployed in google app script runs on a time-based trigger. it will send two images per day. you see, bots work like personal assistants, fetching data and performing tasks on schedule or just ping them, and they’re ready to go.
+
+the interesting thing i discovered was that i always assumed building and maintaining a telegram bot was a task for high-end developers. maybe that assumption was wrong, or the gap has now been filled. i realized i could simply run a script on my pc and let the bot do its job. i wanted to deploy these projects on a vps but wasn’t ready to spend money until i figured out exactly what i needed. that's when i found google app script, which has some limitations and quotas but worked fine for me.
+
+after creating bots, i shifted focus to building chrome extensions. browser extensions add useful features directly to your browser, making tasks easier without needing to switch between tools or tabs. my first one was a text case converter, similar to what i had done with scripts and the bot, and it’s now available in various modes.
+
+with my renewed interest in [chess](https://romio.substack.com/p/getting-back-into-chess), i started building tools for that community as well. from there, i moved on to creating web tools that work offline and static ones that run on the client side with the help of javascript.
+
+that’s when i realized i was several years late to the party! why hadn’t anything inspired me earlier? or maybe i just wasn’t looking.
+
+anyway, i don’t have any specific endgame right now. the only limitation and challenge there is the context length. i think in the coming months issues like this will be resolved.
+
+i actually enjoy using the terminal. seeing results there feels more rewarding. i’ve realized that if i can create something that works in the terminal, it’s not that hard to build an interface for it.
+
+i also understand why some developers don’t prioritize design in the initial development stage. but i believe we should meet halfway—a balance between accessible, usable design and functionality. making it look fancy should come second in my opinion. a good example of this is figma’s redesign, where they had to [revert a part of it to the old design](https://www.figma.com/blog/our-approach-to-designing-ui3/) while still incorporating new changes after users pushed back."> <!-- CORRECTED: Update the href to include /post/ --><a href="/blog/post/ai-assisted-learning-journey-10000-hours-snowball-effect" class="card"> <article class="blog-card"> <img src="https://i.pinimg.com/1200x/cd/64/a4/cd64a429f010f95e510b81e297ac885d.jpg" alt="Cover for 10,000 hours" class="card-image"> <div class="card-content"> <h2 class="card-title">10,000 hours</h2> <p class="card-description">Even projects that seem to go nowhere contribute to progress through exploration. It&#39;s about messing around and seeing what happens.</p> <p class="card-meta"> <span>02 Oct, 2024</span> <span> Spotlight</span> </p> </div> </article> </a> </div><div class="search-card-wrapper" data-searchable-content="run llms locally how can i run llms on a mid-range consumer laptop? *originally published on [substack on 25 jul 2024](https://romio.substack.com/p/how-to-run-llms-locally-ollama-lm-studio).*
 
 i remember trying out the [lm studio](https://lmstudio.ai/) a few months back, then due to the slow performance of my system, i decided to uninstall it and wait for the updates.
 
